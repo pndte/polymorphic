@@ -14,7 +14,11 @@ namespace Infrastructure.Bootstrap
         private void InstallConfigs()
         {
             Container.Bind<PlayerMovementConfig>()
-                .FromInstance(Resources.Load<PlayerMovementConfigHolder>("Data/PlayerMovementConfig").PlayerMovementConfig)
+                .FromInstance(Resources.Load<PlayerMovementConfigHolder>("Data/PlayerMovementConfig").Config)
+                .AsSingle();
+            
+            Container.Bind<GameCameraConfig>()
+                .FromInstance(Resources.Load<GameCameraConfigHolder>("Data/GameCameraConfig").Config)
                 .AsSingle();
         }
     }
