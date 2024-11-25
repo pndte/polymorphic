@@ -20,6 +20,14 @@ namespace Infrastructure.Bootstrap
             Container.Bind<GameCameraConfig>()
                 .FromInstance(Resources.Load<GameCameraConfigHolder>("Data/GameCameraConfig").Config)
                 .AsSingle();
+            
+            Container.Bind<PlayerShootingConfig>()
+                .FromInstance(Resources.Load<PlayerShootingConfigHolder>("Data/PlayerShootingConfig").Config)
+                .AsSingle();
+            
+            Container.Bind<MachineGunBulletConfig>()
+                .FromInstance(Resources.Load<MachineGunBulletConfigHolder>("Data/MachineGunBulletConfig").Config)
+                .AsSingle();
         }
     }
 }
