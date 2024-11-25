@@ -15,3 +15,4 @@ MonoBehaviour:
   Config:
     Damage: 1
     Speed: 18
+    LiveTime: 0
