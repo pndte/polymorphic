@@ -7,7 +7,6 @@ namespace Meta.Data
     public class PlayerShootingConfig
     {
         public float Cooldown;
-        public float Damage;
         public Bullet BulletPrefab;
     }
 }

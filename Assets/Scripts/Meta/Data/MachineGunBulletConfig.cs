@@ -1,12 +1,13 @@
 using System;
+using R3;
 
 namespace Meta.Data
 {
     [Serializable]
     public class MachineGunBulletConfig
     {
-        public float Damage;
-        public float Speed;
-        public float LiveTime;
+        public SerializableReactiveProperty<float> Damage;
+        public SerializableReactiveProperty<float> Speed;
+        public SerializableReactiveProperty<float> LiveTime;
     }
 }
