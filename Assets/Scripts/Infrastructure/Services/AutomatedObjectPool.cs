@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Gameplay;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -18,22 +17,23 @@ namespace Infrastructure.Services
 
         private readonly Action<T> _onGet;
         private readonly Action<T> _onRelease;
+        private readonly Action<T> _onCreate;
+        private readonly Action<T> _onDestroy;
+        private readonly Action<T> _onReset;
 
-        public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize)
+        public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize,
+            Action<T> onGet = null, Action<T> onRelease = null, Action<T> onCreate = null, Action<T> onDestroy = null, Action<T> onReset = null)
         {
+            _onGet = onGet;
+            _onRelease = onRelease;
+            _onCreate = onCreate;
+            _onDestroy = onDestroy;
+            _onReset = onReset;
             _factory = factory;
             _prefabsParent = prefabsParent;
             _objectPool = new ObjectPool<T>(CreateObject, actionOnDestroy: OnDestroyObject, defaultCapacity: size,
                 maxSize: maxSize);
-            // FillPool(size);
-        }
-
-        public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize,
-            Action<T> onGet, Action<T> onRelease) :
-            this(factory, prefabsParent, size, maxSize)
-        {
-            _onGet += onGet;
-            _onRelease += onRelease;
+            FillPool(size);
         }
 
         private void FillPool(int objCount)
@@ -50,12 +50,15 @@ namespace Infrastructure.Services
             var obj = _factory.Create();
             obj.transform.parent = _prefabsParent;
             obj.OnReset += OnReset;
+            
+            _onCreate?.Invoke(obj);
 
             return obj;
         }
 
         private void OnDestroyObject(T obj)
         {
+            _onDestroy?.Invoke(obj);
             obj.OnReset -= OnReset;
         }
 
@@ -83,6 +86,7 @@ namespace Infrastructure.Services
 
         private void OnReset(T obj)
         {
+            _onReset?.Invoke(obj);
             Release(obj);
         }
 
