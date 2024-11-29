@@ -9,13 +9,11 @@ namespace Infrastructure.Services
 {
     /// <summary>
     /// Unity.API object pool decorator.
-    /// T should override the GetHashCode() method.
     /// </summary>
-    public class AutomatedObjectPool<T>: IObjectPool<T> where T : MonoBehaviour, IResettable<T>
+    public class AutomatedObjectPool<T> : IObjectPool<T> where T : MonoBehaviour, IResettable<T>
     {
         private readonly Transform _prefabsParent;
         private readonly IObjectPool<T> _objectPool;
-        private readonly ISet<T> _objectsSubscribed = new HashSet<T>();
         private readonly IFactory<T> _factory;
 
         private readonly Action<T> _onGet;
@@ -25,10 +23,12 @@ namespace Infrastructure.Services
         {
             _factory = factory;
             _prefabsParent = prefabsParent;
-            _objectPool = new ObjectPool<T>(CreateObject, defaultCapacity: size, maxSize: maxSize);
+            _objectPool = new ObjectPool<T>(CreateObject, actionOnDestroy: OnDestroyObject, defaultCapacity: size,
+                maxSize: maxSize);
+            // FillPool(size);
         }
-        
-        public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize, 
+
+        public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize,
             Action<T> onGet, Action<T> onRelease) :
             this(factory, prefabsParent, size, maxSize)
         {
@@ -36,13 +36,27 @@ namespace Infrastructure.Services
             _onRelease += onRelease;
         }
 
+        private void FillPool(int objCount)
+        {
+            for (int i = 0; i < objCount; i++)
+            {
+                var obj = CreateObject();
+                obj.Reset();
+            }
+        }
+
         private T CreateObject()
         {
             var obj = _factory.Create();
             obj.transform.parent = _prefabsParent;
-            SubscribeOnObjectReset(obj);
-            
+            obj.OnReset += OnReset;
+
             return obj;
+        }
+
+        private void OnDestroyObject(T obj)
+        {
+            obj.OnReset -= OnReset;
         }
 
         public T Get()
@@ -57,7 +71,7 @@ namespace Infrastructure.Services
         {
             var pooledObj = _objectPool.Get(out v);
             _onGet?.Invoke(v); // TODO: it's ok?
-            
+
             return pooledObj;
         }
 
@@ -65,15 +79,6 @@ namespace Infrastructure.Services
         {
             _onRelease?.Invoke(element);
             _objectPool.Release(element);
-        }
-
-        private void SubscribeOnObjectReset(T element)
-        {
-            if (!_objectsSubscribed.Contains(element))
-            {
-                element.OnReset += OnReset;
-                _objectsSubscribed.Add(element);
-            }
         }
 
         private void OnReset(T obj)

@@ -98,6 +98,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59d149596774ceabd2cf0bc131dc62e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Config>k__BackingField:
+    Damage:
+      value: 0
+    Speed:
+      value: 0
+    LiveTime:
+      value: 0
 --- !u!50 &-5527105475680374036
 Rigidbody2D:
   serializedVersion: 4

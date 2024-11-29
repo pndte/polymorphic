@@ -4,8 +4,11 @@ using Zenject;
 
 namespace Gameplay.Combat
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public class KeyboardShooting : MonoBehaviour
     {
+        [SerializeField] private BaseBulletConfig _bulletConfig;
+        
         [Inject(Id = "MachineGun")] private IBulletProvider _bulletProvider;
         private PlayerShootingConfig _config;
         private float _timeSinceLastShot;
@@ -16,7 +19,7 @@ namespace Gameplay.Combat
         {
             _config = config;
         }
-        
+
         private void Update()
         {
             _timeSinceLastShot += Time.deltaTime;
@@ -26,10 +29,11 @@ namespace Gameplay.Combat
             if (_timeSinceLastShot < _config.Cooldown) return;
             
             var bullet = _bulletProvider.Get();
-            bullet.transform.position = transform.position;
+            var position = transform.position;
+            bullet.transform.position = new Vector3(position.x, position.y, position.z);
             bullet.transform.rotation = transform.rotation;
             
-            bullet.Launch(transform.up);
+            bullet.Launch(_bulletConfig, transform.up);
             
             _timeSinceLastShot = 0;
         }

@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: MachineGunBulletConfig
   m_EditorClassIdentifier: 
   Config:
-    Damage: 1
-    Speed: 18
-    LiveTime: 0
+    Damage:
+      completeState: 0
+      currentValue: 0
+      value: 0
+    Speed:
+      completeState: 0
+      currentValue: 20
+      value: 20
+    LiveTime:
+      completeState: 0
+      currentValue: 5
+      value: 5

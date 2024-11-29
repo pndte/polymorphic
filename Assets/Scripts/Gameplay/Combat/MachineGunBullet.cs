@@ -8,22 +8,19 @@ namespace Gameplay.Combat
     [RequireComponent(typeof(Rigidbody2D))]
     public class MachineGunBullet : Bullet
     {
-        [field: SerializeField] public override MachineGunBulletConfig Config { get; protected set; }
-
         private Vector2 _cachedDirection;
         private bool _launched;
         private Rigidbody2D _physics;
-
-        [Inject]
-        private void Construct(MachineGunBulletConfig config)
-        {
-            Config = config;
-        }
+        private BaseBulletConfig _defaultConfig;
 
         private void Awake()
         {
             _physics = GetComponent<Rigidbody2D>();
+            _defaultConfig = Resources.Load<BaseBulletConfig>("Data/Combat/DefaultBulletConfig");
+            SetDefaultConfig();
         }
+
+        [field: SerializeField] public override BaseBulletConfig Config { get; set; }
 
         private void FixedUpdate()
         {
@@ -43,21 +40,31 @@ namespace Gameplay.Combat
             _cachedDirection = Vector2.zero;
             _launched = false;
             _physics.velocity = Vector2.zero;
-            
+            SetDefaultConfig();
+
             OnReset?.Invoke(this);
         }
+        
+        private void SetDefaultConfig() => Config = _defaultConfig;
 
         public override event Action<Bullet> OnReset;
-
 
         public override void Launch(Vector2 direction)
         {
             _cachedDirection = direction;
             _launched = true;
-            
+
             Invoke(nameof(Reset), Config.LiveTime.Value); // TODO: maybe UniTask.
         }
 
-        public class Factory : PlaceholderFactory<MachineGunBullet> {}
+        public override void Launch(BaseBulletConfig bulletConfig, Vector2 direction)
+        {
+            Config = bulletConfig;
+            Launch(direction);
+        }
+
+        public class Factory : PlaceholderFactory<MachineGunBullet>
+        {
+        }
     }
 }

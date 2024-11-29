@@ -11,8 +11,6 @@ namespace Infrastructure.Scenes
         [SerializeField] private MachineGunBulletProvider _machineGunBulletProvider;
         public override void InstallBindings()
         {
-            InstallConfigs();
-            
             Container.BindFactory<MachineGunBullet, MachineGunBullet.Factory>().
                 FromComponentInNewPrefab(_machineGunBulletPrefab);
             
@@ -20,13 +18,6 @@ namespace Infrastructure.Scenes
                 WithId("MachineGun").
                 FromComponentInNewPrefab(_machineGunBulletProvider).
                 AsSingle();
-        }
-        
-        private void InstallConfigs()
-        {
-            Container.Bind<MachineGunBulletConfig>()
-                .FromInstance(Resources.Load<MachineGunBulletConfigHolder>("Data/MachineGunBulletConfig").Config)
-                .AsTransient();
         }
     }
 }
