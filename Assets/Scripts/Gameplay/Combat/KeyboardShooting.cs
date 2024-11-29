@@ -6,16 +6,15 @@ namespace Gameplay.Combat
 {
     public class KeyboardShooting : MonoBehaviour
     {
+        [Inject(Id = "MachineGun")] private IBulletProvider _bulletProvider;
         private PlayerShootingConfig _config;
         private float _timeSinceLastShot;
-        private IBulletProvider _bulletProvider;
         // event Shooted;  Zenject Events
         
-        [Inject(Id = "MachineGun")]
-        private void Construct(PlayerShootingConfig config, IBulletProvider bulletProvider)
+        [Inject]
+        private void Construct(PlayerShootingConfig config)
         {
             _config = config;
-            _bulletProvider = bulletProvider;
         }
         
         private void Update()
@@ -27,6 +26,9 @@ namespace Gameplay.Combat
             if (_timeSinceLastShot < _config.Cooldown) return;
             
             var bullet = _bulletProvider.Get();
+            bullet.transform.position = transform.position;
+            bullet.transform.rotation = transform.rotation;
+            
             bullet.Launch(transform.up);
             
             _timeSinceLastShot = 0;

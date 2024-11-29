@@ -42,6 +42,7 @@ namespace Gameplay.Combat
             transform.position = new Vector3(0, 0, 0);
             _cachedDirection = Vector2.zero;
             _launched = false;
+            _physics.velocity = Vector2.zero;
             
             OnReset?.Invoke(this);
         }
@@ -56,5 +57,7 @@ namespace Gameplay.Combat
             
             Invoke(nameof(Reset), Config.LiveTime.Value); // TODO: maybe UniTask.
         }
+
+        public class Factory : PlaceholderFactory<MachineGunBullet> {}
     }
 }

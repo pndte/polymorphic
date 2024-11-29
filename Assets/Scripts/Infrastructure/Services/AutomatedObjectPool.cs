@@ -13,38 +13,67 @@ namespace Infrastructure.Services
     /// </summary>
     public class AutomatedObjectPool<T>: IObjectPool<T> where T : MonoBehaviour, IResettable<T>
     {
-        private readonly MonoBehaviour _prefab;
         private readonly Transform _prefabsParent;
         private readonly IObjectPool<T> _objectPool;
         private readonly ISet<T> _objectsSubscribed = new HashSet<T>();
-        private readonly IInstantiator _instantiator;
+        private readonly IFactory<T> _factory;
 
-        public AutomatedObjectPool(MonoBehaviour prefab, Transform prefabsParent, int size, int maxSize, IInstantiator instantiator)
+        private readonly Action<T> _onGet;
+        private readonly Action<T> _onRelease;
+
+        public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize)
         {
-            _prefab = prefab;
-            _instantiator = instantiator;
+            _factory = factory;
             _prefabsParent = prefabsParent;
             _objectPool = new ObjectPool<T>(CreateObject, defaultCapacity: size, maxSize: maxSize);
+        }
+        
+        public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize, 
+            Action<T> onGet, Action<T> onRelease) :
+            this(factory, prefabsParent, size, maxSize)
+        {
+            _onGet += onGet;
+            _onRelease += onRelease;
         }
 
         private T CreateObject()
         {
-            return _instantiator.InstantiatePrefabForComponent<T>(_prefab, _prefabsParent);
+            var obj = _factory.Create();
+            obj.transform.parent = _prefabsParent;
+            SubscribeOnObjectReset(obj);
+            
+            return obj;
         }
-        
-        public T Get() => _objectPool.Get();
 
-        public PooledObject<T> Get(out T v) => _objectPool.Get(out v);
+        public T Get()
+        {
+            var obj = _objectPool.Get();
+            _onGet?.Invoke(obj);
+
+            return obj;
+        }
+
+        public PooledObject<T> Get(out T v)
+        {
+            var pooledObj = _objectPool.Get(out v);
+            _onGet?.Invoke(v); // TODO: it's ok?
+            
+            return pooledObj;
+        }
 
         public void Release(T element) // TODO: профайлить, смотреть, что по затратам памяти.
+        {
+            _onRelease?.Invoke(element);
+            _objectPool.Release(element);
+        }
+
+        private void SubscribeOnObjectReset(T element)
         {
             if (!_objectsSubscribed.Contains(element))
             {
                 element.OnReset += OnReset;
                 _objectsSubscribed.Add(element);
             }
-
-            _objectPool.Release(element);
         }
 
         private void OnReset(T obj)
