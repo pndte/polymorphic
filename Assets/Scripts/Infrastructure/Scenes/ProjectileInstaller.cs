@@ -6,11 +6,6 @@ namespace Infrastructure.Scenes
 {
     public class ProjectileInstaller: MonoInstaller
     {
-        // private void Awake()
-        // {
-        //     Container.InstantiatePrefabForComponent<>()
-        // }
-
         public override void InstallBindings()
         {
             InstallConfigs();

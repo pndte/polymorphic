@@ -40,6 +40,9 @@ namespace Gameplay.Combat
         public override void Reset()
         {
             transform.position = new Vector3(0, 0, 0);
+            _cachedDirection = Vector2.zero;
+            _launched = false;
+            
             OnReset?.Invoke(this);
         }
 
@@ -50,9 +53,8 @@ namespace Gameplay.Combat
         {
             _cachedDirection = direction;
             _launched = true;
-            Invoke(nameof(Die), Config.LiveTime.Value); // TODO: maybe UniTask.
+            
+            Invoke(nameof(Reset), Config.LiveTime.Value); // TODO: maybe UniTask.
         }
-
-        public void Die() => Destroy(gameObject);
     }
 }
