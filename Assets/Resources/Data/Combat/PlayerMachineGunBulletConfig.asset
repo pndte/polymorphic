@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68cf1adc664434bb44b57fb645715aa, type: 3}
   m_Name: PlayerMachineGunBulletConfig
   m_EditorClassIdentifier: 
-  <Speed>k__BackingField:
-    value: 18
-  <Damage>k__BackingField:
-    value: 5
-  <LiveTime>k__BackingField:
-    value: 3
+  BulletData:
+    <Speed>k__BackingField:
+      value: 20
+    <Damage>k__BackingField:
+      value: 0
+    <LiveTime>k__BackingField:
+      value: 4.1

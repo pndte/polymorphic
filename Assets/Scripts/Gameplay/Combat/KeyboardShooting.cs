@@ -1,5 +1,7 @@
+using System;
 using Meta.Data;
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 namespace Gameplay.Combat
@@ -7,17 +9,18 @@ namespace Gameplay.Combat
     [RequireComponent(typeof(Rigidbody2D))]
     public class KeyboardShooting : MonoBehaviour
     {
-        [SerializeField] private BaseBulletConfig _bulletConfig;
-        
-        [Inject(Id = "MachineGun")] private IBulletProvider _bulletProvider;
+        private BaseBulletData _bulletData;
+        private IBulletProvider _bulletProvider;
         private PlayerShootingConfig _config;
         private float _timeSinceLastShot;
-        // event Shooted;  Zenject Events
+        public UnityEvent<Vector2> Shooted;
         
         [Inject]
-        private void Construct(PlayerShootingConfig config)
+        private void Construct(IBulletProvider bulletProvider, PlayerShootingConfig config, BaseBulletData bulletData)
         {
             _config = config;
+            _bulletProvider = bulletProvider;
+            _bulletData = bulletData;
         }
 
         private void Update()
@@ -33,7 +36,8 @@ namespace Gameplay.Combat
             bullet.transform.position = new Vector3(position.x, position.y, position.z);
             bullet.transform.rotation = transform.rotation;
             
-            bullet.Launch(_bulletConfig, transform.up);
+            bullet.Launch(_bulletData, transform.up);
+            Shooted?.Invoke(transform.up);
             
             _timeSinceLastShot = 0;
         }

@@ -435,6 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _machineGunBulletPrefab: {fileID: 2099694065964612145, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
   _machineGunBulletProvider: {fileID: 7756079533226564406, guid: 6224dc53fe21ff44ab613abd4e6722ba, type: 3}
+  _playerMachineGunBulletConfigHolder: {fileID: 11400000, guid: bb234e06469eba54889f0db0199cae1c, type: 2}
 --- !u!1 &1002947952
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,12 +593,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002947952}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2063940335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1002947958
 MonoBehaviour:
@@ -641,7 +642,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56084d711ac74f1ea29296062ad8f451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bulletConfig: {fileID: 0}
+  Shooted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2063940334}
+        m_TargetAssemblyTypeName: Shaker, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1220260519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1077,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2063940333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2063940335}
+  - component: {fileID: 2063940334}
+  m_Layer: 0
+  m_Name: PlayerHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2063940334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063940333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029a33b39ffee4949b762626e17cc9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shakeDuration: 0.2
+  _shakePower: 0.1
+--- !u!4 &2063940335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063940333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1002947957}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1069,9 +1131,9 @@ SceneRoots:
   - {fileID: 667277398}
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 1002947957}
   - {fileID: 1910206035}
   - {fileID: 1684068082}
   - {fileID: 1236219299}
   - {fileID: 1514300420}
   - {fileID: 1220260521}
+  - {fileID: 2063940335}

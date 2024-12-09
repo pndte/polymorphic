@@ -11,16 +11,16 @@ namespace Gameplay.Combat
         private Vector2 _cachedDirection;
         private bool _launched;
         private Rigidbody2D _physics;
-        private BaseBulletConfig _defaultConfig;
+        private BaseBulletData _defaultData;
 
         private void Awake()
         {
-            _physics = GetComponent<Rigidbody2D>();
-            _defaultConfig = Resources.Load<BaseBulletConfig>("Data/Combat/DefaultBulletConfig");
+            _physics = GetComponent<Rigidbody2D>(); 
+            _defaultData = Resources.Load<BaseBulletConfigHolder>("Data/Combat/DefaultBulletConfig").BulletData; // TODO: remove absolute path
             SetDefaultConfig();
         }
 
-        [field: SerializeField] public override BaseBulletConfig Config { get; set; }
+        [field: SerializeField] public override BaseBulletData Data { get; protected set; }
 
         private void FixedUpdate()
         {
@@ -31,7 +31,7 @@ namespace Gameplay.Combat
 
         public override void Move(Vector2 direction)
         {
-            _physics.velocity = direction * Config.Speed.Value;
+            _physics.velocity = direction * Data.Speed.Value;
         }
 
         public override void Reset()
@@ -45,7 +45,7 @@ namespace Gameplay.Combat
             OnReset?.Invoke(this);
         }
         
-        private void SetDefaultConfig() => Config = _defaultConfig;
+        private void SetDefaultConfig() => Data = _defaultData;
 
         public override event Action<Bullet> OnReset;
 
@@ -54,12 +54,12 @@ namespace Gameplay.Combat
             _cachedDirection = direction;
             _launched = true;
 
-            Invoke(nameof(Reset), Config.LiveTime.Value); // TODO: maybe UniTask.
+            Invoke(nameof(Reset), Data.LiveTime.Value); // TODO: maybe UniTask.
         }
 
-        public override void Launch(BaseBulletConfig bulletConfig, Vector2 direction)
+        public override void Launch(BaseBulletData bulletData, Vector2 direction)
         {
-            Config = bulletConfig;
+            Data = new BaseBulletData(bulletData.Speed.Value, bulletData.Damage.Value, bulletData.LiveTime.Value); // TODO: optimize mb
             Launch(direction);
         }
 

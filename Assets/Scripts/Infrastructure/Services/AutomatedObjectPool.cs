@@ -74,7 +74,7 @@ namespace Infrastructure.Services
         {
             var pooledObj = _objectPool.Get(out v);
             _onGet?.Invoke(v); // TODO: it's ok?
-
+            
             return pooledObj;
         }
 
