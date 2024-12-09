@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shakeDuration: 0.2
-  _shakePower: 0.1
+  _shakePower: 0.24
 --- !u!4 &2063940335
 Transform:
   m_ObjectHideFlags: 0

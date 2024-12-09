@@ -10,7 +10,7 @@ namespace Gameplay.Combat
         [SerializeField] private MachineGunBullet _bulletPrefab;
         [SerializeField] private Transform _bulletParent;
         [SerializeField] private int _poolSize;
-        [SerializeField] private int _poolMaxSize;
+        [SerializeField] private int _poolMaxSize; // TODO: Zenject
         
         private IFactory<Bullet> _factory;
         private IObjectPool<Bullet> _objectPool;
@@ -23,9 +23,12 @@ namespace Gameplay.Combat
 
         private void Awake()
         {
-            _objectPool =
+            var automatedObjectPool =
                 new AutomatedObjectPool<Bullet>(_factory, _bulletParent, _poolSize, _poolMaxSize,
                     bullet => bullet.gameObject.SetActive(true), bullet => bullet.gameObject.SetActive(false));
+            automatedObjectPool.Fill(_poolSize);
+            
+            _objectPool = automatedObjectPool;
         }
 
         public Bullet Get() => _objectPool.Get();

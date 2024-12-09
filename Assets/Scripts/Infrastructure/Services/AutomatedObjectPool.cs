@@ -33,10 +33,9 @@ namespace Infrastructure.Services
             _prefabsParent = prefabsParent;
             _objectPool = new ObjectPool<T>(CreateObject, actionOnDestroy: OnDestroyObject, defaultCapacity: size,
                 maxSize: maxSize);
-            FillPool(size);
         }
 
-        private void FillPool(int objCount)
+        public void Fill(int objCount)
         {
             for (int i = 0; i < objCount; i++)
             {
