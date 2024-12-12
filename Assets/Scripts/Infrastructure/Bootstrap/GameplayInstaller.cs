@@ -21,8 +21,8 @@ namespace Infrastructure.Bootstrap
                 .FromInstance(Resources.Load<GameCameraConfigHolder>("Data/GameCameraConfig").Config)  // TODO: remove absolute path
                 .AsSingle();
             
-            Container.Bind<PlayerShootingConfig>()
-                .FromInstance(Resources.Load<PlayerShootingConfigHolder>("Data/PlayerShootingConfig").Config)  // TODO: remove absolute path
+            Container.Bind<BaseWeaponConfig>()
+                .FromInstance(Resources.Load<PlayerShootingConfigHolder>("Data/BaseWeaponConfig").Config)  // TODO: remove absolute path
                 .AsSingle();
         }
     }

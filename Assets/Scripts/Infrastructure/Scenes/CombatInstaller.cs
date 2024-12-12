@@ -14,16 +14,20 @@ namespace Infrastructure.Scenes
         {
             Container.BindFactory<MachineGunBullet, MachineGunBullet.Factory>().
                 FromComponentInNewPrefab(_machineGunBulletPrefab);
-            
-
-            Container.Bind<IBulletProvider>()
-                .FromComponentInNewPrefab(_machineGunBulletProvider)
-                .AsSingle()
-                .When(ctx => ctx.ObjectType == typeof(KeyboardShooting));
 
             Container.Bind<BaseBulletData>()
                 .FromInstance(_playerMachineGunBulletConfigHolder.BulletData)
                 .AsSingle();
+        }
+
+        public void InstallMachineGun()
+        {
+            Container.Bind<IBulletProvider>()
+                .FromComponentInNewPrefab(_machineGunBulletProvider)
+                .AsSingle()
+                .When(ctx => ctx.ObjectType == typeof(MachineGun));
+            
+            //TODO: передать transform игрока
         }
     }
 }
