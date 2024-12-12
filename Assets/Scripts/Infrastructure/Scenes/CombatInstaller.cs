@@ -1,5 +1,5 @@
-using Gameplay.Combat;
-using Meta.Data;
+using Entities.Gameplay.Combat;
+using Entities.Meta.Data;
 using UnityEngine;
 using Zenject;
 
