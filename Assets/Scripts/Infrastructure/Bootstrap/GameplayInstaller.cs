@@ -22,7 +22,7 @@ namespace Infrastructure.Bootstrap
                 .AsSingle();
             
             Container.Bind<BaseWeaponConfig>()
-                .FromInstance(Resources.Load<PlayerShootingConfigHolder>("Data/BaseWeaponConfig").Config)  // TODO: remove absolute path
+                .FromInstance(Resources.Load<PlayerShootingConfigHolder>("Data/PlayerShootingConfig").Config)  // TODO: remove absolute path
                 .AsSingle();
         }
     }
