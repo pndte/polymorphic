@@ -1,7 +1,11 @@
 using PEntities.Gameplay.Combat;
+using PEntities.Gameplay.Motion;
 using PEntities.Meta.Data;
+using PUseCases.Gameplay;
 using UnityEngine;
 using Zenject;
+using Bullet = PEntities.Gameplay.Combat.Bullet;
+using MachineGun = PEntities.Gameplay.Combat.MachineGun;
 
 namespace Infrastructure.Scenes
 {
@@ -10,6 +14,7 @@ namespace Infrastructure.Scenes
         [SerializeField] private Bullet _machineGunBulletPrefab;
         [SerializeField] private MachineGunBulletProvider _machineGunBulletProvider;
         [SerializeField] private BaseBulletConfigHolder _playerMachineGunBulletConfigHolder;
+        [SerializeField] private Rigidbody2D _playerRigidbody2D;
         public override void InstallBindings()
         {
             Container.BindFactory<MachineGunBullet, MachineGunBullet.Factory>().
@@ -18,6 +23,9 @@ namespace Infrastructure.Scenes
             Container.Bind<BaseBulletData>()
                 .FromInstance(_playerMachineGunBulletConfigHolder.BulletData)
                 .AsSingle();
+            
+            InstallMachineGun();
+            InstallPlayer();
         }
 
         public void InstallMachineGun()
@@ -27,7 +35,30 @@ namespace Infrastructure.Scenes
                 .AsSingle()
                 .When(ctx => ctx.ObjectType == typeof(MachineGun));
             
-            //TODO: передать transform игрока
+            Container.Bind<Transform>()
+                .FromInstance(_playerRigidbody2D.transform)
+                .AsSingle()
+                .When(ctx => ctx.ObjectType == typeof(MachineGun));
+            
+            Container.Bind(typeof(MachineGun), typeof(ITickable))
+                .To<MachineGun>()
+                .AsSingle();
+        }
+        
+        private void InstallPlayer()
+        {
+            Container.Bind<IShipMorph>()
+                .To<PlayerArrowShipMorph>()
+                .FromMethod(GetPlayerMorph)
+                .AsSingle();
+        }
+
+        private PlayerArrowShipMorph GetPlayerMorph()
+        {
+            return new PlayerArrowShipMorph(
+                new PhysicsMovement(Container.Resolve<PlayerMovementConfig>(), _playerRigidbody2D),
+                new BaseDamageable(),
+                new BaseWeaponHolder(Container.Resolve<MachineGun>()));
         }
     }
 }

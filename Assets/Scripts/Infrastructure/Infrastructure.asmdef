@@ -3,7 +3,8 @@
     "rootNamespace": "",
     "references": [
         "PEntities",
-        "Zenject"
+        "Zenject",
+        "PUseCases"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

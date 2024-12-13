@@ -436,6 +436,7 @@ MonoBehaviour:
   _machineGunBulletPrefab: {fileID: 2099694065964612145, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
   _machineGunBulletProvider: {fileID: 7756079533226564406, guid: 6224dc53fe21ff44ab613abd4e6722ba, type: 3}
   _playerMachineGunBulletConfigHolder: {fileID: 11400000, guid: bb234e06469eba54889f0db0199cae1c, type: 2}
+  _playerRigidbody2D: {fileID: 1002947954}
 --- !u!1 &1002947952
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +452,7 @@ GameObject:
   - component: {fileID: 1002947955}
   - component: {fileID: 1002947958}
   - component: {fileID: 1002947959}
+  - component: {fileID: 1002947960}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -532,6 +534,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c7d82213a8c2d4ba47913843663029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _config:
+    Speed: 0
+    DirectionIncreaseSpeed: 0
+  _physics: {fileID: 0}
+  _cachedDirection: {x: 0, y: 0}
 --- !u!212 &1002947956
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -629,6 +636,33 @@ MonoBehaviour:
     value: 100
   _maximum:
     value: 100
+--- !u!114 &1002947960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002947952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6862dcf8c472488497bcda6d0b238709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shooted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2063940334}
+        m_TargetAssemblyTypeName: Shaker, Assembly-CSharp
+        m_MethodName: Shake
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1220260519
 GameObject:
   m_ObjectHideFlags: 0

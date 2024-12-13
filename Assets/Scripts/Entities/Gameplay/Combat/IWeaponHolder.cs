@@ -4,7 +4,7 @@ namespace PEntities.Gameplay.Combat
 {
     public interface IWeaponHolder
     {
-        public IWeapon Current();
+        public IWeapon Current { get; }
         public void Change(int weaponIndex);
         public IList<IWeapon> Weapons { get; }
     }

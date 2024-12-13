@@ -1,0 +1,49 @@
+using UnityEngine;
+using UnityEngine.Events;
+using Zenject;
+
+namespace PUseCases.Gameplay
+{
+    public class TempPlayer : MonoBehaviour
+    {
+        [SerializeField] private UnityEvent<Vector2> _shooted;
+        
+        private IShipMorph _shipMorph;
+
+        [Inject]
+        public void Construct(IShipMorph shipMorph)
+        {
+            _shipMorph = shipMorph;
+        }
+
+        public void Update()
+        {
+            Shoot();
+        }
+
+        private void FixedUpdate()
+        {
+            Move();
+        }
+
+        private void Shoot()
+        {
+            if (Input.GetMouseButton(0) && _shipMorph.IsReadyToShoot)
+            {
+                _shipMorph.Shoot(0, transform.up);
+                _shooted.Invoke(transform.up);
+            }
+        }
+
+        private void Move()
+        {
+            var moveDirection = DefineDirection();
+            _shipMorph.Move(moveDirection);
+        }
+
+        private Vector2 DefineDirection()
+        {
+            return new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        }
+    }
+}

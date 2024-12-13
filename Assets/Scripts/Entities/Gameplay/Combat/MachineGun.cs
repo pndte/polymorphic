@@ -1,9 +1,10 @@
 using PEntities.Meta.Data;
 using UnityEngine;
+using Zenject;
 
 namespace PEntities.Gameplay.Combat
 {
-    public class MachineGun: IWeapon
+    public class MachineGun: IWeapon, ITickable
     {
         private readonly BaseBulletData _bulletData;
         private readonly IBulletProvider _bulletProvider;
@@ -22,8 +23,6 @@ namespace PEntities.Gameplay.Combat
         
         public Bullet Shoot(Vector2 direction)
         {
-            _timeSinceLastShot += Time.deltaTime;
-            
             var bullet = _bulletProvider.Get();
             var position = _bulletSpawn.position;
             
@@ -37,11 +36,19 @@ namespace PEntities.Gameplay.Combat
             return bullet;
         }
 
-        public bool IsReadyToShoot()
+        public bool IsReadyToShoot 
         {
-            if (_timeSinceLastShot < _config.Cooldown) return false;
+            get
+            {
+                if (_timeSinceLastShot < _config.Cooldown) return false;
 
-            return true;
+                return true;
+            }
+        }
+
+        public void Tick()
+        {
+            _timeSinceLastShot += Time.deltaTime;
         }
     }
 }
