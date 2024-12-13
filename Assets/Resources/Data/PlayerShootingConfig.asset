@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Config:
     Cooldown: 0.1
-    Damage: 0
     BulletPrefab: {fileID: 2099694065964612145, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
