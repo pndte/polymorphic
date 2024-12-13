@@ -28,9 +28,12 @@ namespace PUseCases.Gameplay
 
         private void Shoot()
         {
-            if (Input.GetMouseButton(0) && _shipMorph.IsReadyToShoot)
+            var currentWeapon = _shipMorph.CurrentWeapon;
+            if (Input.GetMouseButton(0) && currentWeapon.Reloaded)
             {
-                _shipMorph.Shoot(0, transform.up);
+                currentWeapon.Shoot(transform.up);
+                currentWeapon.ReloadAsync();
+                
                 _shooted.Invoke(transform.up);
             }
         }

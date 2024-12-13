@@ -1,12 +1,14 @@
+using System;
+using System.Collections.Generic;
 using PEntities.Gameplay.Combat;
 using PEntities.Gameplay.Motion;
-using UnityEngine;
 
 namespace PUseCases.Gameplay
 {
     public interface IShipMorph: IMovable, IDamageable
     {
-        public Bullet Shoot(int weaponIndex, Vector2 direction);
-        public bool IsReadyToShoot { get; }
+        public IWeapon CurrentWeapon { get; }
+        public void ChangeCurrentWeaponTo<TWeapon>() where TWeapon : IWeapon;
+        public IReadOnlyDictionary<Type, IWeapon> Weapons { get; }
     }
 }

@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using PEntities.Gameplay.Combat;
 using PEntities.Gameplay.Motion;
 using PEntities.Meta.Data;
@@ -28,7 +30,7 @@ namespace Infrastructure.Scenes
             InstallPlayer();
         }
 
-        public void InstallMachineGun()
+        private void InstallMachineGun()
         {
             Container.Bind<IBulletProvider>()
                 .FromComponentInNewPrefab(_machineGunBulletProvider)
@@ -40,7 +42,7 @@ namespace Infrastructure.Scenes
                 .AsSingle()
                 .When(ctx => ctx.ObjectType == typeof(MachineGun));
             
-            Container.Bind(typeof(MachineGun), typeof(ITickable))
+            Container.Bind(typeof(MachineGun))
                 .To<MachineGun>()
                 .AsSingle();
         }
@@ -58,7 +60,7 @@ namespace Infrastructure.Scenes
             return new PlayerArrowShipMorph(
                 new PhysicsMovement(Container.Resolve<PlayerMovementConfig>(), _playerRigidbody2D),
                 new BaseDamageable(),
-                new BaseWeaponHolder(Container.Resolve<MachineGun>()));
+                new Dictionary<Type, IWeapon>() {{typeof(MachineGun), Container.Resolve<MachineGun>()}});
         }
     }
 }

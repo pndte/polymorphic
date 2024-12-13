@@ -1,17 +1,16 @@
+using System;
+using Cysharp.Threading.Tasks;
 using PEntities.Meta.Data;
 using UnityEngine;
-using Zenject;
 
 namespace PEntities.Gameplay.Combat
 {
-    public class MachineGun: IWeapon, ITickable
+    public class MachineGun: IWeapon
     {
         private readonly BaseBulletData _bulletData;
         private readonly IBulletProvider _bulletProvider;
         private readonly BaseWeaponConfig _config;
         private readonly Transform _bulletSpawn;
-        
-        private float _timeSinceLastShot;
         
         public MachineGun(IBulletProvider bulletProvider, Transform bulletSpawn, BaseWeaponConfig config, BaseBulletData bulletData)
         {
@@ -19,6 +18,7 @@ namespace PEntities.Gameplay.Combat
             _bulletProvider = bulletProvider;
             _config = config;
             _bulletSpawn = bulletSpawn;
+            Reloaded = true;
         }
         
         public Bullet Shoot(Vector2 direction)
@@ -30,25 +30,24 @@ namespace PEntities.Gameplay.Combat
             bullet.transform.rotation = _bulletSpawn.rotation;
             
             bullet.Launch(_bulletData, _bulletSpawn.up);
-            
-            _timeSinceLastShot = 0;
+
+            Reloaded = false;
 
             return bullet;
         }
 
-        public bool IsReadyToShoot 
+        public async UniTask ReloadAsync()
         {
-            get
-            {
-                if (_timeSinceLastShot < _config.Cooldown) return false;
-
-                return true;
-            }
+            await UniTask.Delay(TimeSpan.FromSeconds(_config.Cooldown));
+            
+            Reload();
         }
 
-        public void Tick()
+        public void Reload()
         {
-            _timeSinceLastShot += Time.deltaTime;
+            Reloaded = true;
         }
+
+        public bool Reloaded { get; private set; }
     }
 }

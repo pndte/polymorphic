@@ -3,7 +3,8 @@
     "rootNamespace": "PEntities",
     "references": [
         "R3.Unity",
-        "Zenject"
+        "Zenject",
+        "UniTask"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
