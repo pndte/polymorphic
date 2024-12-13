@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Entities.Meta.Data
+namespace PEntities.Meta.Data
 {
     [Serializable,
      CreateAssetMenu(menuName = "Create BaseBulletConfigHolder", fileName = "BaseBulletConfigHolder", order = 0)]

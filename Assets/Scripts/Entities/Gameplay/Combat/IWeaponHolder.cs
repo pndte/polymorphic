@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Entities.Gameplay.Combat
+namespace PEntities.Gameplay.Combat
 {
     public interface IWeaponHolder
     {

@@ -1,4 +1,4 @@
-using Entities.Meta.Data;
+using PEntities.Meta.Data;
 using UnityEngine;
 using Zenject;
 

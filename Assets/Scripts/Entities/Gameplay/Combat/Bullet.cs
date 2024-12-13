@@ -1,9 +1,10 @@
 using System;
-using Entities.Gameplay.Motion;
-using Entities.Meta.Data;
+using Entities.Gameplay;
+using PEntities.Gameplay.Motion;
+using PEntities.Meta.Data;
 using UnityEngine;
 
-namespace Entities.Gameplay.Combat
+namespace PEntities.Gameplay.Combat
 {
     public abstract class Bullet : MonoBehaviour, IMovable, IResettable<Bullet>
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Entities.Gameplay
+namespace PEntities.Gameplay
 {
     public interface IResettable<out T>
     {

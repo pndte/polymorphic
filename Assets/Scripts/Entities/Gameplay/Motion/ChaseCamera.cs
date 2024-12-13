@@ -1,8 +1,8 @@
-using Entities.Meta.Data;
+using PEntities.Meta.Data;
 using UnityEngine;
 using Zenject;
 
-namespace Entities.Gameplay.Motion
+namespace PEntities.Gameplay.Motion
 {
     public class ChaseCamera : MonoBehaviour
     {

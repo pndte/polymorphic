@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Pool;
 using Zenject;
 
-namespace Entities.Gameplay.Services
+namespace PEntities.Gameplay.Services
 {
     /// <summary>
     /// Unity.API object pool decorator.

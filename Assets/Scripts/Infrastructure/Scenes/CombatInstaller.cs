@@ -1,5 +1,5 @@
-using Entities.Gameplay.Combat;
-using Entities.Meta.Data;
+using PEntities.Gameplay.Combat;
+using PEntities.Meta.Data;
 using UnityEngine;
 using Zenject;
 

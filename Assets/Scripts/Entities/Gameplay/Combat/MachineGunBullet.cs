@@ -1,9 +1,9 @@
 using System;
-using Entities.Meta.Data;
+using PEntities.Meta.Data;
 using UnityEngine;
 using Zenject;
 
-namespace Entities.Gameplay.Combat
+namespace PEntities.Gameplay.Combat
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public class MachineGunBullet : Bullet

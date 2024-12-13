@@ -1,6 +1,6 @@
 using System;
 
-namespace Entities.Meta.Data
+namespace PEntities.Meta.Data
 {
     [Serializable]
     public class PlayerMovementConfig

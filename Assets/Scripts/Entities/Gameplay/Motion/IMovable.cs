@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Entities.Gameplay.Motion
+namespace PEntities.Gameplay.Motion
 {
     public interface IMovable
     {

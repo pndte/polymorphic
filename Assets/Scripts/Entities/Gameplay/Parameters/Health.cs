@@ -1,7 +1,7 @@
 using R3;
 using UnityEngine;
 
-namespace Entities.Gameplay.Parameters
+namespace PEntities.Gameplay.Parameters
 {
     public class Health: MonoBehaviour, IHealth
     {

@@ -1,6 +1,6 @@
 using R3;
 
-namespace Entities.Gameplay.Parameters
+namespace PEntities.Gameplay.Parameters
 {
     public interface IHealth
     {

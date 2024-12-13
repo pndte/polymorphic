@@ -1,9 +1,9 @@
-using Entities.Gameplay.Services;
+using PEntities.Gameplay.Services;
 using UnityEngine;
 using UnityEngine.Pool;
 using Zenject;
 
-namespace Entities.Gameplay.Combat
+namespace PEntities.Gameplay.Combat
 {
     public class MachineGunBulletProvider : MonoBehaviour, IBulletProvider
     {

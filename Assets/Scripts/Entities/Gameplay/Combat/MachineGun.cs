@@ -1,7 +1,7 @@
-using Entities.Meta.Data;
+using PEntities.Meta.Data;
 using UnityEngine;
 
-namespace Entities.Gameplay.Combat
+namespace PEntities.Gameplay.Combat
 {
     public class MachineGun: IWeapon
     {

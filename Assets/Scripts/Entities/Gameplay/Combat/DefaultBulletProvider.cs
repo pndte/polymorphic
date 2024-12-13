@@ -1,4 +1,4 @@
-namespace Entities.Gameplay.Combat
+namespace PEntities.Gameplay.Combat
 {
     public class DefaultBulletProvider : IBulletProvider
     {

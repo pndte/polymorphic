@@ -1,9 +1,8 @@
 {
-    "name": "PEntities",
-    "rootNamespace": "PEntities",
+    "name": "PUseCases",
+    "rootNamespace": "PUseCases",
     "references": [
-        "R3.Unity",
-        "Zenject"
+        "GUID:1bbe67966e707974ca47d141ec824157"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

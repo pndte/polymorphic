@@ -1,7 +1,7 @@
 using System;
-using Entities.Gameplay.Combat;
+using PEntities.Gameplay.Combat;
 
-namespace Entities.Meta.Data 
+namespace PEntities.Meta.Data 
 {
     [Serializable]
     public class BaseWeaponConfig
