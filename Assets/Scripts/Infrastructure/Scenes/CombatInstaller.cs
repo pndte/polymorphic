@@ -59,7 +59,7 @@ namespace Infrastructure.Scenes
         {
             return new PlayerArrowShipMorph(
                 new PhysicsMovement(Container.Resolve<PlayerMovementConfig>(), _playerRigidbody2D),
-                new BaseDamageable(),
+                new DefaultHealth(100, 100),
                 new Dictionary<Type, IWeapon>() {{typeof(MachineGun), Container.Resolve<MachineGun>()}});
         }
     }

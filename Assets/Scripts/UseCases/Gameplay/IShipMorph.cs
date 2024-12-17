@@ -5,7 +5,7 @@ using PEntities.Gameplay.Motion;
 
 namespace PUseCases.Gameplay
 {
-    public interface IShipMorph: IMovable, IDamageable
+    public interface IShipMorph: IMovable, IMortal
     {
         public IWeapon CurrentWeapon { get; }
         public void ChangeCurrentWeaponTo<TWeapon>() where TWeapon : IWeapon;
