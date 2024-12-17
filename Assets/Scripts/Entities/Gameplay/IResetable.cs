@@ -1,10 +1,9 @@
-using System;
+using R3;
 
 namespace PEntities.Gameplay
 {
-    public interface IResettable<out T>
+    public interface IResettable<T>
     {
-        public void Reset();
-        public event Action<T> OnReset;
+        public ReactiveCommand<T> Reset { get; }
     }
 }

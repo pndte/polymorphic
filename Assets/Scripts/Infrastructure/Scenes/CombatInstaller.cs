@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using PCoreAdapters.Gameplay;
 using PCoreAdapters.Utils;
 using PEntities.Gameplay.Combat;
 using PEntities.Gameplay.Motion;
@@ -7,20 +8,19 @@ using PEntities.Meta.Data;
 using PUseCases.Gameplay;
 using UnityEngine;
 using Zenject;
-using Bullet = PEntities.Gameplay.Combat.Bullet;
 using MachineGun = PEntities.Gameplay.Combat.MachineGun;
 
 namespace Infrastructure.Scenes
 {
     public class CombatInstaller : MonoInstaller
     {
-        [SerializeField] private Bullet _machineGunBulletPrefab;
+        [SerializeField] private MonoBullet _machineGunBulletPrefab;
         [SerializeField] private MachineGunBulletProvider _machineGunBulletProvider;
         [SerializeField] private BaseBulletConfigHolder _playerMachineGunBulletConfigHolder;
         [SerializeField] private Rigidbody2D _playerRigidbody2D;
         public override void InstallBindings()
         {
-            Container.BindFactory<MachineGunBullet, MachineGunBullet.Factory>().
+            Container.BindFactory<MonoBullet, MonoBullet.Factory>().
                 FromComponentInNewPrefab(_machineGunBulletPrefab);
 
             Container.Bind<BaseBulletData>()

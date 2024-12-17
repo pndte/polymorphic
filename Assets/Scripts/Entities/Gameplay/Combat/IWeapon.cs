@@ -4,6 +4,6 @@ namespace PEntities.Gameplay.Combat
 {
     public interface IWeapon : IReloadable
     {
-        public Bullet Shoot(Vector2 direction);
+        public IBullet Shoot(Vector2 direction);
     }
 }

@@ -21,15 +21,12 @@ namespace PEntities.Gameplay.Combat
             Reloaded = true;
         }
         
-        public Bullet Shoot(Vector2 direction)
+        public IBullet Shoot(Vector2 direction)
         {
             var bullet = _bulletProvider.Get();
-            var position = _bulletSpawn.position;
             
-            bullet.transform.position = new Vector3(position.x, position.y, position.z);
-            bullet.transform.rotation = _bulletSpawn.rotation;
-            
-            bullet.Launch(_bulletData, _bulletSpawn.up);
+            bullet.Data = _bulletData;
+            bullet.Launch(_bulletSpawn.position, _bulletSpawn.up);
 
             Reloaded = false;
 

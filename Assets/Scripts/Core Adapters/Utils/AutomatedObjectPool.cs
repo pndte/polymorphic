@@ -1,5 +1,6 @@
 using System;
 using PEntities.Gameplay;
+using R3;
 using UnityEngine;
 using UnityEngine.Pool;
 using Zenject;
@@ -9,7 +10,7 @@ namespace PCoreAdapters.Utils
     /// <summary>
     /// Unity.API object pool decorator.
     /// </summary>
-    public class AutomatedObjectPool<T> : IObjectPool<T> where T : MonoBehaviour, IResettable<T>
+    public class AutomatedObjectPool<T> : IDisposable, IObjectPool<T> where T : MonoBehaviour, IResettable<T>
     {
         private readonly Transform _prefabsParent;
         private readonly IObjectPool<T> _objectPool;
@@ -21,6 +22,8 @@ namespace PCoreAdapters.Utils
         private readonly Action<T> _onDestroy;
         private readonly Action<T> _onReset;
 
+        private readonly CompositeDisposable _disposables;
+
         public AutomatedObjectPool(IFactory<T> factory, Transform prefabsParent, int size, int maxSize,
             Action<T> onGet = null, Action<T> onRelease = null, Action<T> onCreate = null, Action<T> onDestroy = null, Action<T> onReset = null)
         {
@@ -31,6 +34,7 @@ namespace PCoreAdapters.Utils
             _onReset = onReset;
             _factory = factory;
             _prefabsParent = prefabsParent;
+            _disposables = new CompositeDisposable();
             _objectPool = new ObjectPool<T>(CreateObject, actionOnDestroy: OnDestroyObject, defaultCapacity: size,
                 maxSize: maxSize);
         }
@@ -40,7 +44,7 @@ namespace PCoreAdapters.Utils
             for (int i = 0; i < objCount; i++)
             {
                 var obj = CreateObject();
-                obj.Reset();
+                obj.Reset.Execute(obj);
             }
         }
 
@@ -48,7 +52,9 @@ namespace PCoreAdapters.Utils
         {
             var obj = _factory.Create();
             obj.transform.parent = _prefabsParent;
-            obj.OnReset += OnReset;
+            obj.Reset
+                .Subscribe(OnReset)
+                .AddTo(_disposables);
             
             _onCreate?.Invoke(obj);
 
@@ -58,7 +64,6 @@ namespace PCoreAdapters.Utils
         private void OnDestroyObject(T obj)
         {
             _onDestroy?.Invoke(obj);
-            obj.OnReset -= OnReset;
         }
 
         public T Get()
@@ -92,5 +97,9 @@ namespace PCoreAdapters.Utils
         public void Clear() => _objectPool.Clear();
 
         public int CountInactive => _objectPool.CountInactive;
+        public void Dispose()
+        {
+            _disposables.Dispose();
+        }
     }
 }

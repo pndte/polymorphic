@@ -7,6 +7,6 @@ namespace PEntities.Meta.Data
     public class BaseWeaponConfig
     {
         public float Cooldown;
-        public Bullet BulletPrefab;
+        public IBullet BulletPrefab;
     }
 }

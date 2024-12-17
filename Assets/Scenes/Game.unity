@@ -450,7 +450,6 @@ GameObject:
   - component: {fileID: 1002947954}
   - component: {fileID: 1002947953}
   - component: {fileID: 1002947958}
-  - component: {fileID: 1002947959}
   - component: {fileID: 1002947960}
   m_Layer: 0
   m_Name: Player
@@ -602,22 +601,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotationSpeed: 0.001
   _camera: {fileID: 519420031}
---- !u!114 &1002947959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002947952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77e4137c44944a818178ec531c700fed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _current:
-    value: 100
-  _maximum:
-    value: 100
 --- !u!114 &1002947960
 MonoBehaviour:
   m_ObjectHideFlags: 0

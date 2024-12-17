@@ -1,3 +1,4 @@
+using PCoreAdapters.Gameplay;
 using PEntities.Gameplay.Combat;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -7,16 +8,16 @@ namespace PCoreAdapters.Utils
 {
     public class MachineGunBulletProvider : MonoBehaviour, IBulletProvider
     {
-        [SerializeField] private MachineGunBullet _bulletPrefab;
+        [SerializeField] private MonoBullet _bulletPrefab;
         [SerializeField] private Transform _bulletParent;
         [SerializeField] private int _poolSize;
         [SerializeField] private int _poolMaxSize; // TODO: Zenject
         
-        private IFactory<Bullet> _factory;
-        private IObjectPool<Bullet> _objectPool;
+        private IFactory<MonoBullet> _factory;
+        private IObjectPool<MonoBullet> _objectPool;
 
         [Inject]
-        private void Construct(MachineGunBullet.Factory factory)
+        private void Construct(MonoBullet.Factory factory)
         {
             _factory = factory;
         }
@@ -24,13 +25,13 @@ namespace PCoreAdapters.Utils
         private void Awake()
         {
             var automatedObjectPool =
-                new AutomatedObjectPool<Bullet>(_factory, _bulletParent, _poolSize, _poolMaxSize,
+                new AutomatedObjectPool<MonoBullet>(_factory, _bulletParent, _poolSize, _poolMaxSize,
                     bullet => bullet.gameObject.SetActive(true), bullet => bullet.gameObject.SetActive(false));
             automatedObjectPool.Fill(_poolSize); // TODO: передать конфигом данные и закинуть этот код в инфраструктуру.
             
             _objectPool = automatedObjectPool;
         }
 
-        public Bullet Get() => _objectPool.Get();
+        public IBullet Get() => _objectPool.Get();
     }
 }
