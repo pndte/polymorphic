@@ -1,10 +1,11 @@
 {
     "name": "PInfrastructure",
-    "rootNamespace": "",
+    "rootNamespace": "PInfrastructure",
     "references": [
         "GUID:1bbe67966e707974ca47d141ec824157",
-        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
-        "GUID:db2f09c335c0a6a469d9c927c56e4492"
+        "GUID:db2f09c335c0a6a469d9c927c56e4492",
+        "GUID:ecc97d6e92cbeec44b428b6db8f51284",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

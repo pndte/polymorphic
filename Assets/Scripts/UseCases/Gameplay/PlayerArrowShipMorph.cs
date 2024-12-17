@@ -33,7 +33,6 @@ namespace PUseCases.Gameplay
         {
             _currentWeaponType = typeof(TWeapon);
         }
-
         public void Move(Vector2 direction) => _movable.Move(direction);
         public void ApplyDamage(float damage) => _mortal.ApplyDamage(damage);
     }

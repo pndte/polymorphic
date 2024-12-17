@@ -15,12 +15,12 @@ namespace PEntities.Gameplay.Combat
 
         private void Awake()
         {
-            _physics = GetComponent<Rigidbody2D>(); 
-            _defaultData = Resources.Load<BaseBulletConfigHolder>("Data/Combat/DefaultBulletConfig").BulletData; // TODO: remove absolute path
+            _physics = GetComponent<Rigidbody2D>();
+            _defaultData =
+                Resources.Load<BaseBulletConfigHolder>("Data/Combat/DefaultBulletConfig")
+                    .BulletData; // TODO: remove absolute path
             SetDefaultConfig();
         }
-
-        [field: SerializeField] public override BaseBulletData Data { get; protected set; }
 
         private void FixedUpdate()
         {
@@ -28,6 +28,9 @@ namespace PEntities.Gameplay.Combat
 
             Move(_cachedDirection);
         }
+
+        [field: SerializeField] public override BaseBulletData Data { get; protected set; }
+        private void SetDefaultConfig() => Data = _defaultData;
 
         public override void Move(Vector2 direction)
         {
@@ -44,8 +47,6 @@ namespace PEntities.Gameplay.Combat
 
             OnReset?.Invoke(this);
         }
-        
-        private void SetDefaultConfig() => Data = _defaultData;
 
         public override event Action<Bullet> OnReset;
 
@@ -59,7 +60,8 @@ namespace PEntities.Gameplay.Combat
 
         public override void Launch(BaseBulletData bulletData, Vector2 direction)
         {
-            Data = new BaseBulletData(bulletData.Speed.Value, bulletData.Damage.Value, bulletData.LiveTime.Value); // TODO: optimize mb
+            Data = new BaseBulletData(bulletData.Speed.Value, bulletData.Damage.Value,
+                bulletData.LiveTime.Value); // TODO: optimize mb
             Launch(direction);
         }
 
