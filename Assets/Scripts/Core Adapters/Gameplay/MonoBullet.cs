@@ -13,7 +13,7 @@ namespace PCoreAdapters.Gameplay
     {
         private IBullet _bullet;
         private CompositeDisposable _disposables;
-        private Rigidbody _physics;
+        private Rigidbody2D _physics;
         private BaseBulletData _defaultData;
         
         [Inject]
@@ -22,7 +22,7 @@ namespace PCoreAdapters.Gameplay
             _bullet = bullet;
             Reset = new ReactiveCommand<MonoBullet>();
             _disposables = new CompositeDisposable();
-            _physics = GetComponent<Rigidbody>();
+            _physics = GetComponent<Rigidbody2D>();
             _defaultData =
                 Resources.Load<BaseBulletConfigHolder>("Data/Combat/DefaultBulletConfig")
                     .BulletData; 
@@ -50,6 +50,9 @@ namespace PCoreAdapters.Gameplay
         public void Launch(Vector2 launchOrigin, Vector2 direction) 
         {
             _bullet.Launch(launchOrigin, direction);
+            var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, angle - 90);
+
             ResetAsync();
         }
 
@@ -63,7 +66,7 @@ namespace PCoreAdapters.Gameplay
         {
             IsLaunched.Value = false;
             LaunchedDirection.Value = Vector2.zero;
-            transform.position = Vector3.zero;
+            transform.position = new Vector3(999, 999, 0);
             transform.rotation = Quaternion.identity;
             _physics.velocity = Vector3.zero;
             Data = _defaultData;

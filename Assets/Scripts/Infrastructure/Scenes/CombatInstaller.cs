@@ -10,7 +10,7 @@ using UnityEngine;
 using Zenject;
 using MachineGun = PEntities.Gameplay.Combat.MachineGun;
 
-namespace Infrastructure.Scenes
+namespace PInfrastructure.Scenes
 {
     public class CombatInstaller : MonoInstaller
     {
@@ -20,12 +20,7 @@ namespace Infrastructure.Scenes
         [SerializeField] private Rigidbody2D _playerRigidbody2D;
         public override void InstallBindings()
         {
-            Container.BindFactory<MonoBullet, MonoBullet.Factory>().
-                FromComponentInNewPrefab(_machineGunBulletPrefab);
-
-            Container.Bind<BaseBulletData>()
-                .FromInstance(_playerMachineGunBulletConfigHolder.BulletData)
-                .AsSingle();
+            Container.BindFactory<MonoBullet, MonoBullet.Factory>().FromSubContainerResolve().ByNewContextPrefab(_machineGunBulletPrefab);
             
             InstallMachineGun();
             InstallPlayer();
@@ -33,6 +28,10 @@ namespace Infrastructure.Scenes
 
         private void InstallMachineGun()
         {
+            Container.Bind<BaseBulletData>()
+                .FromInstance(_playerMachineGunBulletConfigHolder.BulletData)
+                .AsSingle();
+            
             Container.Bind<IBulletProvider>()
                 .FromComponentInNewPrefab(_machineGunBulletProvider)
                 .AsSingle()

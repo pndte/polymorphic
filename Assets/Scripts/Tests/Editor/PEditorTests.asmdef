@@ -2,10 +2,12 @@
     "name": "PEditorTests",
     "rootNamespace": "PEditorTests",
     "references": [
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner",
-        "PEntities",
-        "PUseCases"
+        "GUID:1bbe67966e707974ca47d141ec824157",
+        "GUID:db2f09c335c0a6a469d9c927c56e4492",
+        "GUID:ecc97d6e92cbeec44b428b6db8f51284",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:77221876cc6b8244180b96e320b1bcd4"
     ],
     "includePlatforms": [
         "Editor"

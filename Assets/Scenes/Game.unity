@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954bfbe6a65a46f3b6c5c2141710a0df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _machineGunBulletPrefab: {fileID: 2099694065964612145, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
+  _machineGunBulletPrefab: {fileID: 8292878226686815865, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
   _machineGunBulletProvider: {fileID: 7756079533226564406, guid: 6224dc53fe21ff44ab613abd4e6722ba, type: 3}
   _playerMachineGunBulletConfigHolder: {fileID: 11400000, guid: bb234e06469eba54889f0db0199cae1c, type: 2}
   _playerRigidbody2D: {fileID: 1002947954}
