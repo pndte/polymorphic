@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Infrastructure.Bootstrap
+namespace PInfrastructure.Bootstrap
 {
     public class DebugInstaller : MonoBehaviour
     {

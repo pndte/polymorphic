@@ -44,7 +44,7 @@ namespace PCoreAdapters.Utils
             for (int i = 0; i < objCount; i++)
             {
                 var obj = CreateObject();
-                obj.Reset.Execute(obj);
+                Release(obj);
             }
         }
 
@@ -52,6 +52,7 @@ namespace PCoreAdapters.Utils
         {
             var obj = _factory.Create();
             obj.transform.parent = _prefabsParent;
+            obj.transform.position = _prefabsParent.position;
             obj.Reset
                 .Subscribe(OnReset)
                 .AddTo(_disposables);

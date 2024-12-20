@@ -3,9 +3,8 @@ using System;
 namespace PEntities.Meta.Data
 {
     [Serializable]
-    public class PlayerMovementConfig
+    public class MovementConfig
     {
         public float Speed;
-        public float DirectionIncreaseSpeed;
     }
 }

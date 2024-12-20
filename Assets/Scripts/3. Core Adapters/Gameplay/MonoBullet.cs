@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using PEntities.Gameplay;
 using PEntities.Gameplay.Combat;
@@ -15,6 +16,9 @@ namespace PCoreAdapters.Gameplay
         private CompositeDisposable _disposables;
         private Rigidbody2D _physics;
         private BaseBulletData _defaultData;
+        
+        private bool _isResetAwaited;
+        private CancellationTokenSource _resetCancellationToken;
         
         [Inject]
         private void Construct(IBullet bullet)
@@ -58,18 +62,27 @@ namespace PCoreAdapters.Gameplay
 
         private async UniTask ResetAsync()
         {
-            await UniTask.Delay(TimeSpan.FromSeconds(Data.LiveTime.Value));
+            _resetCancellationToken = new CancellationTokenSource();
+            await UniTask.Delay(TimeSpan.FromSeconds(Data.LiveTime.Value), cancellationToken: _resetCancellationToken.Token);
+            _isResetAwaited = true;
+            
             Reset.Execute(this);
         }
 
         private void OnReset()
         {
+            if (!_isResetAwaited)
+            {
+                _resetCancellationToken.Cancel();
+            }
+            
             IsLaunched.Value = false;
             LaunchedDirection.Value = Vector2.zero;
             transform.position = new Vector3(999, 999, 0);
             transform.rotation = Quaternion.identity;
             _physics.velocity = Vector3.zero;
             Data = _defaultData;
+            _isResetAwaited = false;
         }
         
         public class Factory : PlaceholderFactory<MonoBullet>

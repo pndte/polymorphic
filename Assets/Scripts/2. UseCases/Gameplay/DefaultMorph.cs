@@ -8,14 +8,14 @@ using UnityEngine;
 
 namespace PUseCases.Gameplay
 {
-    public class PlayerArrowShipMorph : IShipMorph
+    public class DefaultMorph : IShipMorph
     {
         private readonly IMovable _movable;
         private readonly IMortal _mortal;
 
         private Type _currentWeaponType;
 
-        public PlayerArrowShipMorph(IMovable movable, IMortal mortal,
+        public DefaultMorph(IMovable movable, IMortal mortal,
             IReadOnlyDictionary<Type, IWeapon> weapons)
         {
             _movable = movable;

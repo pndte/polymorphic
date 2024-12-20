@@ -2,7 +2,7 @@ using PEntities.Meta.Data;
 using UnityEngine;
 using Zenject;
 
-namespace Infrastructure.Bootstrap
+namespace PInfrastructure.Bootstrap
 {
     public class GameplayInstaller : MonoInstaller
     {
@@ -13,8 +13,8 @@ namespace Infrastructure.Bootstrap
 
         private void InstallConfigs()
         {
-            Container.Bind<PlayerMovementConfig>()
-                .FromInstance(Resources.Load<PlayerMovementConfigHolder>("Data/PlayerMovementConfig").Config) // TODO: remove absolute path
+            Container.Bind<MovementConfig>()
+                .FromInstance(Resources.Load<MovementConfigHolder>("Data/Movement/PlayerMovementConfig").Config) // TODO: remove absolute path
                 .AsSingle();
             
             Container.Bind<GameCameraConfig>()

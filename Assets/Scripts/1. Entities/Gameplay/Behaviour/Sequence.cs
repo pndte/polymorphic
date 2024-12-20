@@ -5,16 +5,16 @@ namespace PEntities.Gameplay.Behaviour
 {
     public class Sequence : INode
     {
-        private readonly IEnumerable<INode> _chldren;
+        private readonly IEnumerable<INode> _children;
 
         public Sequence(IEnumerable<INode> children)
         {
-            _chldren = children;
+            _children = children;
         }
 
         public NodeState Evaluate()
         {
-            foreach (INode node in _chldren)
+            foreach (INode node in _children)
             {
                 switch (node.Evaluate())
                 {

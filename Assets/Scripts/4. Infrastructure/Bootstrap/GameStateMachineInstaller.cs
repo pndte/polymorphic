@@ -1,6 +1,6 @@
 using Zenject;
 
-namespace Infrastructure.Bootstrap
+namespace PInfrastructure.Bootstrap
 {
     public class GameStateMachineInstaller : MonoInstaller
     {

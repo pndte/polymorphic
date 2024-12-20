@@ -9,13 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68cf1adc664434bb44b57fb645715aa, type: 3}
-  m_Name: PlayerMachineGunBulletConfig
+  m_Script: {fileID: 11500000, guid: 637275365ecc49e791525cdc2aac616a, type: 3}
+  m_Name: LightGunnerMovementConfig
   m_EditorClassIdentifier: 
-  BulletData:
-    <Speed>k__BackingField:
-      value: 40
-    <Damage>k__BackingField:
-      value: 5
-    <LiveTime>k__BackingField:
-      value: 4.1
+  Config:
+    Speed: 10

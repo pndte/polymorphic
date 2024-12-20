@@ -8,6 +8,7 @@ using PEntities.Meta.Data;
 using PUseCases.Gameplay;
 using UnityEngine;
 using Zenject;
+using Zenject.SpaceFighter;
 using MachineGun = PEntities.Gameplay.Combat.MachineGun;
 
 namespace PInfrastructure.Scenes
@@ -18,6 +19,7 @@ namespace PInfrastructure.Scenes
         [SerializeField] private MachineGunBulletProvider _machineGunBulletProvider;
         [SerializeField] private BaseBulletConfigHolder _playerMachineGunBulletConfigHolder;
         [SerializeField] private Rigidbody2D _playerRigidbody2D;
+        [SerializeField] private TempPlayer _playerPrefab;
         public override void InstallBindings()
         {
             Container.BindFactory<MonoBullet, MonoBullet.Factory>().FromSubContainerResolve().ByNewContextPrefab(_machineGunBulletPrefab);
@@ -50,15 +52,21 @@ namespace PInfrastructure.Scenes
         private void InstallPlayer()
         {
             Container.Bind<IShipMorph>()
-                .To<PlayerArrowShipMorph>()
+                .To<DefaultMorph>()
                 .FromMethod(GetPlayerMorph)
+                .AsTransient()
+                .When(ctx => ctx.ObjectType == typeof(TempPlayer));
+
+            Container.Bind<TempPlayer>()
+                .ToSelf()
+                .FromInstance(_playerPrefab)
                 .AsSingle();
         }
 
-        private PlayerArrowShipMorph GetPlayerMorph()
+        private DefaultMorph GetPlayerMorph()
         {
-            return new PlayerArrowShipMorph(
-                new PhysicsMovement(Container.Resolve<PlayerMovementConfig>(), _playerRigidbody2D),
+            return new DefaultMorph(
+                new PhysicsMovement(Container.Resolve<MovementConfig>(), _playerRigidbody2D),
                 new DefaultHealth(100, 100),
                 new Dictionary<Type, IWeapon>() {{typeof(MachineGun), Container.Resolve<MachineGun>()}});
         }
