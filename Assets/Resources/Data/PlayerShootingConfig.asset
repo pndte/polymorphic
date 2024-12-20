@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: PlayerShootingConfig
   m_EditorClassIdentifier: 
   Config:
-    Cooldown: 0.1
-    BulletPrefab: {fileID: 2099694065964612145, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
+    Cooldown: 0.13

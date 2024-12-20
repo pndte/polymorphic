@@ -10,23 +10,22 @@ namespace PEntities.Gameplay.Combat
         private readonly BaseBulletData _bulletData;
         private readonly IBulletProvider _bulletProvider;
         private readonly BaseWeaponConfig _config;
-        private readonly Transform _bulletSpawn;
+        private readonly Transform _weaponUser;
         
-        public MachineGun(IBulletProvider bulletProvider, Transform bulletSpawn, BaseWeaponConfig config, BaseBulletData bulletData)
+        public MachineGun(IBulletProvider bulletProvider, Transform weaponUser, BaseWeaponConfig config, BaseBulletData bulletData)
         {
             _bulletData = bulletData;
             _bulletProvider = bulletProvider;
             _config = config;
-            _bulletSpawn = bulletSpawn;
+            _weaponUser = weaponUser;
             Reloaded = true;
         }
         
         public IBullet Shoot(Vector2 direction)
         {
-            var bullet = _bulletProvider.Get();
+            var bullet = _bulletProvider.Get(_bulletData);
             
-            bullet.Data = _bulletData;
-            bullet.Launch(_bulletSpawn.position, _bulletSpawn.up);
+            bullet.Launch(_weaponUser.position, _weaponUser.up);
 
             Reloaded = false;
 

@@ -1,15 +1,15 @@
 namespace PEntities.Gameplay.Behaviour
 {
-    public class RootNode: Node
+    public class RootNode : INode
     {
-        private readonly Node _root;
-        
-        public RootNode(Node root)
+        private readonly INode _root;
+
+        public RootNode(INode root)
         {
             _root = root;
         }
 
-        public override NodeState Evaluate()
+        public NodeState Evaluate()
         {
             return _root.Evaluate();
         }

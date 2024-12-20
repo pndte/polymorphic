@@ -1,5 +1,6 @@
 using PCoreAdapters.Gameplay;
 using PEntities.Gameplay.Combat;
+using PEntities.Meta.Data;
 using UnityEngine;
 using UnityEngine.Pool;
 using Zenject;
@@ -33,5 +34,13 @@ namespace PCoreAdapters.Utils
         }
 
         public IBullet Get() => _objectPool.Get();
+        
+        public IBullet Get(BaseBulletData bulletData)
+        {
+            var bullet = _objectPool.Get();
+            bullet.Data = bulletData;
+            
+            return bullet;
+        }
     }
 }
