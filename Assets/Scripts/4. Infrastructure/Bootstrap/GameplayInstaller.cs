@@ -13,10 +13,6 @@ namespace PInfrastructure.Bootstrap
 
         private void InstallConfigs()
         {
-            Container.Bind<MovementConfig>()
-                .FromInstance(Resources.Load<MovementConfigHolder>("Data/Movement/PlayerMovementConfig").Config) // TODO: remove absolute path
-                .AsSingle();
-            
             Container.Bind<GameCameraConfig>()
                 .FromInstance(Resources.Load<GameCameraConfigHolder>("Data/GameCameraConfig").Config)  // TODO: remove absolute path
                 .AsSingle();

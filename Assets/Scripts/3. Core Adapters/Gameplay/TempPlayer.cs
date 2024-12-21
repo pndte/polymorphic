@@ -19,13 +19,13 @@ namespace PCoreAdapters.Gameplay
         private int _currentMorph;
 
         [Inject]
-        public void Construct(IMortal sharedHealth, params IShipMorph[] shipMorphs)
+        public void Construct(IMortal sharedHealth, IShipMorph[] shipMorphs)
         {
+            _disposables = new CompositeDisposable();
             sharedHealth.IsDead
                 .Subscribe(isDead => gameObject.SetActive(!isDead))
                 .AddTo(_disposables);
             _shipMorphs = shipMorphs.ToList();
-            _disposables = new CompositeDisposable();
         }
 
         public void Update()
