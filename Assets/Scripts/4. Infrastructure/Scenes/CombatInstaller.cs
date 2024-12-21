@@ -56,6 +56,8 @@ namespace PInfrastructure.Scenes
                 .FromMethod(GetPlayerMorph)
                 .AsTransient()
                 .When(ctx => ctx.ObjectType == typeof(TempPlayer));
+            
+            var shipMorph = Container.Resolve<IShipMorph>();
 
             Container.Bind<TempPlayer>()
                 .ToSelf()

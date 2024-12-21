@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletData:
     <Speed>k__BackingField:
-      value: 40
+      value: 60
     <Damage>k__BackingField:
       value: 5
     <LiveTime>k__BackingField:

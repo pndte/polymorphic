@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
 using EditorAttributes;
+using PEntities.Gameplay.Combat;
 using PUseCases.Gameplay;
 using R3;
 using UnityEngine;
@@ -12,21 +15,23 @@ namespace PCoreAdapters.Gameplay
         [SerializeField] private UnityEvent<Vector2> _shooted;
         private CompositeDisposable _disposables;
         
-        private IShipMorph _shipMorph;
+        private List<IShipMorph> _shipMorphs;
+        private int _currentMorph;
 
         [Inject]
-        public void Construct(IShipMorph shipMorph)
+        public void Construct(IMortal sharedHealth, params IShipMorph[] shipMorphs)
         {
-            _shipMorph = shipMorph;
-            _disposables = new CompositeDisposable();
-            _shipMorph.IsDead
+            sharedHealth.IsDead
                 .Subscribe(isDead => gameObject.SetActive(!isDead))
                 .AddTo(_disposables);
+            _shipMorphs = shipMorphs.ToList();
+            _disposables = new CompositeDisposable();
         }
 
         public void Update()
         {
             Shoot();
+            ChangeMorph();
         }
 
         private void FixedUpdate()
@@ -38,24 +43,35 @@ namespace PCoreAdapters.Gameplay
         {
             _disposables.Dispose();
         }
+        private IShipMorph CurrentMorph => _shipMorphs[_currentMorph];
+
+        private void ChangeMorph()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _currentMorph++;
+                if (_currentMorph >= _shipMorphs.Count)
+                    _currentMorph = 0;
+            }
+        }
 
         [Button("Take 10 Damage")]
         private void TakeDamage()
         {
-            _shipMorph.ApplyDamage(10);
-            print(_shipMorph.CurrentHealth + "/" + _shipMorph.MaximumHealth);
+            CurrentMorph.ApplyDamage(10);
+            print(CurrentMorph.CurrentHealth + "/" + CurrentMorph.MaximumHealth);
         }
 
         [Button("Heal 10 Points")]
         private void Heal()
         {
-            _shipMorph.ApplyDamage(-10);
-            print(_shipMorph.CurrentHealth + "/" + _shipMorph.MaximumHealth);
+            CurrentMorph.ApplyDamage(-10);
+            print(CurrentMorph.CurrentHealth + "/" + CurrentMorph.MaximumHealth);
         }
 
         private void Shoot()
         {
-            var currentWeapon = _shipMorph.CurrentWeapon;
+            var currentWeapon = CurrentMorph.CurrentWeapon;
             if (Input.GetMouseButton(0) && currentWeapon.Reloaded)
             {
                 currentWeapon.Shoot(transform.up);
@@ -68,7 +84,7 @@ namespace PCoreAdapters.Gameplay
         private void Move()
         {
             var moveDirection = DefineDirection();
-            _shipMorph.Move(moveDirection);
+            CurrentMorph.Move(moveDirection);
         }
 
         private Vector2 DefineDirection()
