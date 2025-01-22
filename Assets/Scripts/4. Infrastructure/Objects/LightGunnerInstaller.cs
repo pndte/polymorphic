@@ -42,7 +42,7 @@ namespace PInfrastructure.Objects
             return new RootNode(
                 new Selector(new List<INode>()
                 {
-                    new Chaser(shipMorph, new ChaserConfig(_movementConfig.Config, 10, 5), transform,
+                    new Chaser(shipMorph, new ChaserConfig(_movementConfig.Config, 10, 2), transform,
                         Container.Resolve<TempPlayer>().transform),
                     new Idler(shipMorph, transform)
                 }));

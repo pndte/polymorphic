@@ -192,6 +192,1179 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &58622106
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -37.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &65795343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -38.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &69609454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.899996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &111620411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.300001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &132803659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &162059807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &173592891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -34.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &248575574
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &282713316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &299427815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.699999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &358084508
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.800001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &359627447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.399998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &414437836
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.199999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &417088533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -44.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.800002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &445232465
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.799999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &447986181
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3999977
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &463693026
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +1516,213 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 1002947957}
+--- !u!1001 &525190406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &576402425
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1999979
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &602987505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +1805,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &657003084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.100001335
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &667277396
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +1955,144 @@ MonoBehaviour:
   _machineGunBulletProvider: {fileID: 7756079533226564406, guid: 6224dc53fe21ff44ab613abd4e6722ba, type: 3}
   _playerMachineGunBulletConfigHolder: {fileID: 11400000, guid: bb234e06469eba54889f0db0199cae1c, type: 2}
   _player: {fileID: 1002947960}
+--- !u!1001 &694890187
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &695196528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.199999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 26.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1001 &745629580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -575,6 +2162,420 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &767669670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.600001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &776545788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.100001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &790624234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.80000114
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &808568820
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.799999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &824329813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &839180454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 26.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &899460420 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2086882148704976433, guid: a731a6bbcb4508746be4e4abffa5476d, type: 3}
@@ -631,6 +2632,282 @@ MonoBehaviour:
   _installerPrefabs: []
   _autoRun: 1
   _kernel: {fileID: 0}
+--- !u!1001 &1057893014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -54.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1085722288
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.300001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1091883950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1213659782
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.599997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.300002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &1220260519
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +2992,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1228654211
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.1000013
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &1236219297
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +3145,489 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1264703472
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.699999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 32.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1315798838
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -36.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.299997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1370740509
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1411215326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -47.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1438057003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -41.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1448553660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.199999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1482504203
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.399996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &1514300418
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +3712,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1536950873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.0999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &1684068080
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +3865,213 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1725455001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1788154817
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -57.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1904156689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.900002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1 &1910206033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +4156,420 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1930683717
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -46.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &1985757832
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -30.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.800001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &2023171322
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.8999977
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.700003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &2063832387
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &2095928152
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.099998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+--- !u!1001 &2145249495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.099998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2627796544039026119, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664889390850222797, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: m_Name
+      value: Light Gunner (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904648895745112801, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
+      propertyPath: _movementConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: a133667c2f49d5844ab2656d9a5846af, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e257179fc5bd5f42a9a6e79ab2b2de4, type: 3}
 --- !u!1001 &3003233274113709735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1219,3 +4738,54 @@ SceneRoots:
   - {fileID: 4666538253167421928}
   - {fileID: 16815418}
   - {fileID: 745629580}
+  - {fileID: 1264703472}
+  - {fileID: 162059807}
+  - {fileID: 1438057003}
+  - {fileID: 602987505}
+  - {fileID: 1788154817}
+  - {fileID: 65795343}
+  - {fileID: 1985757832}
+  - {fileID: 445232465}
+  - {fileID: 1411215326}
+  - {fileID: 58622106}
+  - {fileID: 1930683717}
+  - {fileID: 1057893014}
+  - {fileID: 695196528}
+  - {fileID: 694890187}
+  - {fileID: 173592891}
+  - {fileID: 2095928152}
+  - {fileID: 463693026}
+  - {fileID: 824329813}
+  - {fileID: 1085722288}
+  - {fileID: 2063832387}
+  - {fileID: 358084508}
+  - {fileID: 525190406}
+  - {fileID: 1536950873}
+  - {fileID: 359627447}
+  - {fileID: 808568820}
+  - {fileID: 657003084}
+  - {fileID: 1725455001}
+  - {fileID: 839180454}
+  - {fileID: 1228654211}
+  - {fileID: 2023171322}
+  - {fileID: 132803659}
+  - {fileID: 576402425}
+  - {fileID: 1482504203}
+  - {fileID: 1213659782}
+  - {fileID: 1315798838}
+  - {fileID: 417088533}
+  - {fileID: 2145249495}
+  - {fileID: 414437836}
+  - {fileID: 299427815}
+  - {fileID: 776545788}
+  - {fileID: 1091883950}
+  - {fileID: 248575574}
+  - {fileID: 111620411}
+  - {fileID: 1448553660}
+  - {fileID: 1370740509}
+  - {fileID: 1904156689}
+  - {fileID: 790624234}
+  - {fileID: 447986181}
+  - {fileID: 767669670}
+  - {fileID: 282713316}
+  - {fileID: 69609454}
