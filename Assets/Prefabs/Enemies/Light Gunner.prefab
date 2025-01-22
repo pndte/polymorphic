@@ -159,6 +159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementConfig: {fileID: 0}
+  _bulletProvider: {fileID: 0}
+  _enemyWeaponConfig: {fileID: 11400000, guid: bbe95e137bb42af4c8c8aab9f0c54a77, type: 2}
+  _bulletConfigHolder: {fileID: 11400000, guid: 2304964b76199f5449f51e9d9918b2ae, type: 2}
 --- !u!68 &2808604705728006402
 EdgeCollider2D:
   m_ObjectHideFlags: 0

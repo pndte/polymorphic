@@ -9,19 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89983e2ea54c4fca964d3ae306de1d61, type: 3}
-  m_Name: MachineGunBulletConfig
+  m_Script: {fileID: 11500000, guid: f68cf1adc664434bb44b57fb645715aa, type: 3}
+  m_Name: LightGunnerWeaponBullet
   m_EditorClassIdentifier: 
   Config:
-    Damage:
-      completeState: 0
-      currentValue: 0
-      value: 0
-    Speed:
-      completeState: 0
-      currentValue: 20
+    <Speed>k__BackingField:
       value: 20
-    LiveTime:
-      completeState: 0
-      currentValue: 5
+    <Damage>k__BackingField:
+      value: 50
+    <LiveTime>k__BackingField:
       value: 5

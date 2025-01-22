@@ -608,8 +608,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c17c179d073441aba62cdb3ab162baab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerMachineGunBulletConfigHolder: {fileID: 11400000, guid: bb234e06469eba54889f0db0199cae1c, type: 2}
-  _playerMovementConfigHolder: {fileID: 11400000, guid: c67e508943d55a046a18064070dfacab, type: 2}
+  _movementConfigHolder: {fileID: 11400000, guid: c67e508943d55a046a18064070dfacab, type: 2}
+  _machineGunConfigHolder: {fileID: 11400000, guid: a2f9a084536088440a5e01f5275c3bb7, type: 2}
+  _machineGunBulletConfigHolder: {fileID: 11400000, guid: bb234e06469eba54889f0db0199cae1c, type: 2}
+  _cannonGunConfigHolder: {fileID: 11400000, guid: 8709562f4a39cb141ada6d363f1c6c13, type: 2}
+  _cannonGunConfigBulletConfigHolder: {fileID: 11400000, guid: dfe58a933e850234881fb38d6973e5bb, type: 2}
 --- !u!114 &1002947965
 MonoBehaviour:
   m_ObjectHideFlags: 0

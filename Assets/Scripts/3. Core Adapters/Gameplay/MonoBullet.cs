@@ -13,12 +13,12 @@ namespace PCoreAdapters.Gameplay
     public class MonoBullet: MonoBehaviour, IBullet, IResettable<MonoBullet>
     {
         private IBullet _bullet;
-        private CompositeDisposable _disposables;
         private Rigidbody2D _physics;
         private BaseBulletData _defaultData;
         
         private bool _isResetAwaited;
         private CancellationTokenSource _resetCancellationToken;
+        private CompositeDisposable _disposables;
         
         [Inject]
         private void Construct(IBullet bullet)
@@ -29,7 +29,7 @@ namespace PCoreAdapters.Gameplay
             _physics = GetComponent<Rigidbody2D>();
             _defaultData =
                 Resources.Load<BaseBulletConfigHolder>("Data/Combat/DefaultBulletConfig")
-                    .BulletData; 
+                    .Config; 
             
             Reset.Subscribe(_ => OnReset())
                 .AddTo(_disposables);

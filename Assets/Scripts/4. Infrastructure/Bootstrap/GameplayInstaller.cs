@@ -16,10 +16,6 @@ namespace PInfrastructure.Bootstrap
             Container.Bind<GameCameraConfig>()
                 .FromInstance(Resources.Load<GameCameraConfigHolder>("Data/GameCameraConfig").Config)  // TODO: remove absolute path
                 .AsSingle();
-            
-            Container.Bind<BaseWeaponConfig>()
-                .FromInstance(Resources.Load<PlayerShootingConfigHolder>("Data/PlayerShootingConfig").Config)  // TODO: remove absolute path
-                .AsSingle();
         }
     }
 }

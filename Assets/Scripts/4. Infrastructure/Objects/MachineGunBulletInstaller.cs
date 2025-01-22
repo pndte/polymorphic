@@ -15,7 +15,7 @@ namespace PInfrastructure.Objects
         public override void InstallBindings()
         {
             Container.Bind<BaseBulletData>()
-                .FromInstance(_baseBulletConfig.BulletData)
+                .FromInstance(_baseBulletConfig.Config)
                 .AsSingle();
 
             Container.Bind<Rigidbody2D>()

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec39b907b37d406fbb5e77ecff4a211d, type: 3}
-  m_Name: PlayerShootingConfig
+  m_Script: {fileID: 11500000, guid: 745d8cf5f3d84b7e9bdce5990774b36a, type: 3}
+  m_Name: PlayerMachineGun
   m_EditorClassIdentifier: 
-  Config:
-    Cooldown: 0.13
+  _bulletPrefab: {fileID: 8292878226686815865, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
+  _cooldown: 0.1

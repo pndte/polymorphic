@@ -1,12 +1,14 @@
-using System;
 using System.Collections.Generic;
 using PCoreAdapters.Gameplay;
+using PCoreAdapters.Utils;
 using PEntities.Gameplay.Behaviour;
 using PEntities.Gameplay.Combat;
 using PEntities.Gameplay.Motion;
 using PEntities.Meta.Data;
+using PInfrastructure.Meta.Data;
 using PUseCases.Gameplay;
 using PUseCases.Gameplay.AI;
+using PUseCases.Meta.Data;
 using UnityEngine;
 using Zenject;
 
@@ -16,6 +18,9 @@ namespace PInfrastructure.Objects
     public class LightGunnerInstaller : MonoInstaller
     {
         [SerializeField] private MovementConfigHolder _movementConfig;
+        [SerializeField] private MachineGunBulletProvider _bulletProvider;
+        [SerializeField] private BaseWeaponConfigHolder _enemyWeaponConfig;
+        [SerializeField] private BaseBulletConfigHolder _bulletConfigHolder;
 
         public override void InstallBindings()
         {
@@ -37,7 +42,7 @@ namespace PInfrastructure.Objects
             return new RootNode(
                 new Selector(new List<INode>()
                 {
-                    new Chaser(shipMorph, transform,
+                    new Chaser(shipMorph, new ChaserConfig(_movementConfig.Config, 10, 5), transform,
                         Container.Resolve<TempPlayer>().transform),
                     new Idler(shipMorph, transform)
                 }));
@@ -46,9 +51,10 @@ namespace PInfrastructure.Objects
         private DefaultMorph GetEnemyMorph()
         {
             return new DefaultMorph(
-                new PhysicsMovement(_movementConfig.Config, GetComponent<Rigidbody2D>()),
+                new DirectionMovement(_movementConfig.Config, GetComponent<Rigidbody2D>()),
                 new DefaultHealth(15, 15),
-                new Dictionary<Type, IWeapon>() { { typeof(MachineGun), Container.Resolve<MachineGun>() } });
+                new List<IWeapon>() { new BaseGun(_bulletProvider, transform, 
+                    _enemyWeaponConfig.Config, _bulletConfigHolder.Config) });
         }
     }
 }

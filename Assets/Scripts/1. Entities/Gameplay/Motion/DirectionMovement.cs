@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace PEntities.Gameplay.Motion
 {
-    public class PhysicsMovement : IMovable
+    public class DirectionMovement : IMovable
     {
         private readonly MovementConfig _config;
         private readonly Rigidbody2D _physics;
         
-        public PhysicsMovement(MovementConfig config, Rigidbody2D physics)
+        public DirectionMovement(MovementConfig config, Rigidbody2D physics)
         {
             _config = config;
             _physics = physics;

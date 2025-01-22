@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using EditorAttributes;
 using PEntities.Gameplay.Combat;
 using PUseCases.Gameplay;
@@ -75,7 +76,7 @@ namespace PCoreAdapters.Gameplay
             if (Input.GetMouseButton(0) && currentWeapon.Reloaded)
             {
                 currentWeapon.Shoot(transform.up);
-                currentWeapon.ReloadAsync();
+                currentWeapon.ReloadAsync(new CancellationToken(false));
                 
                 _shooted.Invoke(transform.up);
             }

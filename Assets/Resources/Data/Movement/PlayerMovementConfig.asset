@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: PlayerMovementConfig
   m_EditorClassIdentifier: 
   Config:
-    Speed: 15
-    DirectionIncreaseSpeed: 0.05
+    Speed: 25

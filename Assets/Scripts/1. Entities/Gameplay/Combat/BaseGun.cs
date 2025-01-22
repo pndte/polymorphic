@@ -1,24 +1,26 @@
 using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using PEntities.Meta.Data;
 using UnityEngine;
 
 namespace PEntities.Gameplay.Combat
 {
-    public class MachineGun: IWeapon
+    public class BaseGun: IWeapon
     {
         private readonly BaseBulletData _bulletData;
         private readonly IBulletProvider _bulletProvider;
         private readonly BaseWeaponConfig _config;
         private readonly Transform _weaponUser;
         
-        public MachineGun(IBulletProvider bulletProvider, Transform weaponUser, BaseWeaponConfig config, BaseBulletData bulletData)
+        public BaseGun(IBulletProvider bulletProvider, Transform weaponUser,
+            BaseWeaponConfig config, BaseBulletData bulletData, bool isReloaded = true)
         {
             _bulletData = bulletData;
             _bulletProvider = bulletProvider;
             _config = config;
             _weaponUser = weaponUser;
-            Reloaded = true;
+            Reloaded = isReloaded;
         }
         
         public IBullet Shoot(Vector2 direction)
@@ -32,9 +34,9 @@ namespace PEntities.Gameplay.Combat
             return bullet;
         }
 
-        public async UniTask ReloadAsync()
+        public async UniTask ReloadAsync(CancellationToken token)
         {
-            await UniTask.Delay(TimeSpan.FromSeconds(_config.Cooldown));
+            await UniTask.Delay(TimeSpan.FromSeconds(_config.Cooldown), cancellationToken: token);
             
             Reload();
         }
