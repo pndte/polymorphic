@@ -8738,7 +8738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChaserCompute: {fileID: 7200000, guid: 111de97e3fdd9a341bec63b15ee0f671, type: 3}
-  Config: {fileID: 11400000, guid: b0513b1bdadcbd64fbbf35515b8cb9a7, type: 2}
+  Config: {fileID: 11400000, guid: 582f1935f1b61c34e8b21580e780f03e, type: 2}
   Target: {fileID: 1002947957}
 --- !u!1001 &447986181
 PrefabInstance:
@@ -40624,6 +40624,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8244963962665684736, guid: a731a6bbcb4508746be4e4abffa5476d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 271be5659d1bb194986881d3eae9ec8c, type: 3}
+    - target: {fileID: 8244963962665684736, guid: a731a6bbcb4508746be4e4abffa5476d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 9089902177937992775, guid: a731a6bbcb4508746be4e4abffa5476d, type: 3}
       propertyPath: _camera
       value: 

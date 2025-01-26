@@ -17,10 +17,20 @@ namespace PCoreAdapters.Gameplay
         {
             _shipMorph = shipMorph;
             _disposables = new CompositeDisposable();
+
+            _shipMorph.IsDead
+                .Where(isDead => isDead)
+                .Subscribe(_ =>
+                {
+                    transform.position = new Vector3(99999, 99999, 99999);
+                })
+                .AddTo(_disposables);
             _shipMorph.IsDead
                 .Subscribe(isDead => gameObject.SetActive(!isDead))
                 .AddTo(_disposables);
+            
             _rootNode = startNode;
+            
         }
 
         private void FixedUpdate()
@@ -30,6 +40,7 @@ namespace PCoreAdapters.Gameplay
         
         public IShipMorph Morph => _shipMorph;
         public bool IsSeparating { get; set; }
+        public ReactiveProperty<bool> isDead { get; } = new ReactiveProperty<bool>();
 
         private void OnTriggerEnter2D(Collider2D other)
         {

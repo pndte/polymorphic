@@ -21,4 +21,4 @@ MonoBehaviour:
   MinArriveDistance: 18
   ArriveRange: 5
   MaxChaseDistance: 300
-  MinDistanceToSlow: 25
+  MinDistanceToSlow: 60
