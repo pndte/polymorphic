@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: LightGunnerMovementConfig
   m_EditorClassIdentifier: 
   Config:
-    Speed: 10
+    Speed: 15

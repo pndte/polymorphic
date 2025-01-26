@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 2099694065964612145, guid: cfcac822ecc392341829813e0560fa4a, type: 3}
   _bulletParent: {fileID: 3049404886395579329}
-  _poolSize: 100
+  _poolSize: 200
   _poolMaxSize: 500
 --- !u!1 &8250419812435083619
 GameObject:

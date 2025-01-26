@@ -1,0 +1,325 @@
+#pragma kernel ClearGridKernel
+#pragma kernel FillGridKernel
+#pragma kernel ChaserKernel
+
+///////////////////////////////////////////
+// Константы и структуры
+///////////////////////////////////////////
+#define MAX_IN_CELL 64
+#define NO_INDEX 0xFFFFFFFF
+
+// Данные NPC
+struct NPCData
+{
+    float2 position;
+    float2 up;
+    float2 direction; // Итоговый вектор движения
+    uint isSeparating;
+};
+
+// Ячейка сетки. 
+// Здесь ТОЛЬКО счётчик count. 
+// Индексы будут храниться в отдельном буфере g_Indices.
+struct CellData
+{
+    uint count;
+};
+
+///////////////////////////////////////////
+// Буферы
+///////////////////////////////////////////
+
+// Входной/выходной буфер для NPC
+StructuredBuffer<NPCData> npcInput : register(t0);
+RWStructuredBuffer<NPCData> npcOutput : register(u0);
+
+// Сетка: массив ячеек
+RWStructuredBuffer<CellData> g_Grid : register(u1);
+
+// Отдельный буфер для индексов NPC в каждой ячейке
+// Его размер должен быть (gridResolution.x * gridResolution.y * MAX_IN_CELL)
+RWStructuredBuffer<uint> g_Indices : register(u2);
+
+///////////////////////////////////////////
+// CBuffer с параметрами
+///////////////////////////////////////////
+cbuffer GridParams : register(b0)
+{
+    // Параметры сетки
+    float2 domainMin;
+    float2 domainMax;
+    float cellSize;
+    uint2 gridResolution;
+
+    // Поведение
+    float separationRadius;
+    float separationStrength;
+    float baseSpeed;
+    float minArriveDistance;
+    float arriveRange;
+    float maxChaseDistance;
+    float minDistanceToSlow;
+    float2 targetPosition;
+
+    // Кол-во NPC
+    uint g_NumNPCs;
+}
+
+///////////////////////////////////////////
+// Вспомогательные функции
+///////////////////////////////////////////
+uint GetCellIndex(float2 pos)
+{
+    float2 rel = pos - domainMin;
+    int cellX = (int)(rel.x / cellSize);
+    int cellY = (int)(rel.y / cellSize);
+
+    cellX = max(0, min(cellX, (int)gridResolution.x - 1));
+    cellY = max(0, min(cellY, (int)gridResolution.y - 1));
+
+    return (cellY * gridResolution.x) + cellX;
+}
+
+float2 lerp2D(float2 a, float2 b, float t)
+{
+    return a + t * (b - a);
+}
+
+float2 ClampMagnitude(float2 v, float maxLen)
+{
+    float lenSq = dot(v, v);
+    if (lenSq > maxLen * maxLen)
+    {
+        float len = sqrt(lenSq);
+        v = (v / len) * maxLen;
+    }
+    return v;
+}
+
+struct NormalizedData
+{
+    float2 dir;
+    float dist;
+};
+
+NormalizedData normalizeAndLength(float2 v)
+{
+    NormalizedData r;
+    r.dist = length(v);
+    if (r.dist > 1e-5)
+        r.dir = v / r.dist;
+    else
+        r.dir = float2(0, 0);
+    return r;
+}
+
+///////////////////////////////////////////
+// 1) ClearGridKernel
+///////////////////////////////////////////
+[numthreads(64,1,1)]
+void ClearGridKernel(uint3 dtID : SV_DispatchThreadID)
+{
+    uint cellCount = gridResolution.x * gridResolution.y;
+    uint i = dtID.x;
+    if (i >= cellCount) return;
+
+    // Обнуляем CellData
+    CellData c;
+    c.count = 0;
+    g_Grid[i] = c;
+
+    // Также можно обнулить сегмент в g_Indices, 
+    // но обычно необязательно затирать все индексы, 
+    // так как мы будем обращаться только к count первых элементов. 
+    // При желании: 
+    /*
+    [unroll]
+    for(int k=0; k<MAX_IN_CELL; k++)
+    {
+        g_Indices[i * MAX_IN_CELL + k] = NO_INDEX;
+    }
+    */
+}
+
+///////////////////////////////////////////
+// 2) FillGridKernel
+// Добавляем NPC в соответствующие ячейки
+///////////////////////////////////////////
+[numthreads(64,1,1)]
+void FillGridKernel(uint3 dtID : SV_DispatchThreadID)
+{
+    uint i = dtID.x;
+    if (i >= g_NumNPCs) return;
+
+    NPCData npc = npcInput[i];
+    uint cellIdx = GetCellIndex(npc.position);
+
+    // Атомарно увеличиваем счётчик
+    uint oldVal;
+    InterlockedAdd(g_Grid[cellIdx].count, 1, oldVal);
+
+    // Если не переполнилось
+    if (oldVal < MAX_IN_CELL)
+    {
+        // Пишем индекс NPC i в массив g_Indices
+        uint baseAddr = cellIdx * MAX_IN_CELL;
+        g_Indices[baseAddr + oldVal] = i;
+    }
+}
+
+///////////////////////////////////////////
+// Логика LookAt, Arrive, Separation
+///////////////////////////////////////////
+float2 LookAt(float2 currentUp, float2 desiredDir, float lerpFactor)
+{
+    return lerp2D(currentUp, desiredDir, lerpFactor);
+}
+
+float2 Arrive(float distanceToTarget, float2 direction)
+{
+    if (distanceToTarget < minDistanceToSlow)
+    {
+        float speed = baseSpeed * ((distanceToTarget - minArriveDistance) / arriveRange);
+        direction *= speed / baseSpeed;
+    }
+    return direction;
+}
+
+static int2 neighborOffsets[9] = {
+    int2(-1, -1), int2(0, -1), int2(1, -1),
+    int2(-1, 0), int2(0, 0), int2(1, 0),
+    int2(-1, 1), int2(0, 1), int2(1, 1)
+};
+
+float2 CalculateSeparationForce(uint myIndex, float2 myPos)
+{
+    float2 separationForce = float2(0, 0);
+    int nearbyCount = 0;
+
+    // Узнаём, где находится этот NPC по ячейке
+    uint mainCellIdx = GetCellIndex(myPos);
+    uint cellY = mainCellIdx / gridResolution.x;
+    uint cellX = mainCellIdx % gridResolution.x;
+
+    // Вычислим, сколько ячеек нужно охватывать (в каждую сторону),
+    // чтобы покрыть separationRadius.
+    // Например, если separationRadius=10, cellSize=4,
+    // neighborRange = ceil(10/4) = 3 => -3..3
+    int neighborRange = (int)ceil(separationRadius / cellSize);
+
+    float2 diff, otherPos;
+    float dist;
+
+    // Перебираем окрестные ячейки в диапазоне -neighborRange..+neighborRange
+
+    float minDistanceToNearestNeighbor = separationRadius * 2;
+
+    for (int dy = -neighborRange; dy <= neighborRange; dy++)
+    {
+        for (int dx = -neighborRange; dx <= neighborRange; dx++)
+        {
+            int nx = (int)cellX + dx;
+            int ny = (int)cellY + dy;
+            if (nx < 0 || ny < 0 || nx >= gridResolution.x || ny >= gridResolution.y)
+                continue;
+
+            uint neighCellIdx = ny * gridResolution.x + nx;
+
+            // Счётчик
+            uint ccount = g_Grid[neighCellIdx].count;
+
+            // Базовый адрес в g_Indices
+            uint baseAddr = neighCellIdx * MAX_IN_CELL;
+
+            // Перебираем всех NPC внутри этой ячейки
+            for (uint c = 0; c < ccount; c++)
+            {
+                uint otherIdx = g_Indices[baseAddr + c];
+                // Проверяем
+                if (otherIdx == myIndex)
+                    continue;
+
+                float2 otherPos = npcInput[otherIdx].position;
+                float2 diff = myPos - otherPos;
+                float dist = length(diff);
+
+                if (dist < minDistanceToNearestNeighbor)
+                {
+                    minDistanceToNearestNeighbor = dist;
+                }
+
+                if (dist > 0 && dist < separationRadius)
+                {
+                    float2 diffNorm = diff / dist;
+                    separationForce += diffNorm / dist;
+                    nearbyCount++;
+                }
+            }
+        }
+    }
+
+    if (nearbyCount > 0 && (minDistanceToNearestNeighbor < (0.2f * separationRadius) || npcInput[myIndex].isSeparating))
+    {
+        npcOutput[myIndex].isSeparating = true;
+
+        // separationForce *= length(targetPosition - npcInput[myIndex].position);
+
+        separationForce = (separationForce * nearbyCount) * separationStrength * (1 / 35.1f);
+    }
+    else
+    {
+        npcOutput[myIndex].isSeparating = false;
+    }
+
+    return separationForce;
+}
+
+///////////////////////////////////////////
+// 3) ChaserKernel — основная логика
+///////////////////////////////////////////
+[numthreads(64,1,1)]
+void ChaserKernel(uint3 dtID : SV_DispatchThreadID)
+{
+    uint i = dtID.x;
+    if (i >= g_NumNPCs) return;
+
+    NPCData npc = npcInput[i];
+
+    // 1) Направление к цели
+    float2 toTarget = targetPosition - npc.position;
+    NormalizedData nd = normalizeAndLength(toTarget);
+    float distanceToTarget = nd.dist;
+
+    float2 finalDirection = float2(0, 0);
+    if (distanceToTarget <= maxChaseDistance)
+    {
+        finalDirection = nd.dir;
+        // 2) LookAt
+        npc.up = LookAt(npc.up, finalDirection, 0.2f);
+        // 3) Arrive
+        finalDirection = Arrive(distanceToTarget, finalDirection);
+    }
+    else
+    {
+        npcOutput[i] = npc;
+        return;
+    }
+
+    // 4) Separation
+    float2 separationForce = CalculateSeparationForce(i, npc.position);
+
+    if (npcOutput[i].isSeparating)
+    {
+        npc.isSeparating = 1;
+        finalDirection += (separationForce * 0.3f);
+    }
+    else
+    {
+        npc.isSeparating = false;
+    }
+
+    finalDirection = ClampMagnitude(finalDirection, 1.0f);
+    npc.direction = finalDirection;
+
+    npcOutput[i] = npc;
+}

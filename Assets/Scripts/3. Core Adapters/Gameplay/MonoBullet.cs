@@ -29,9 +29,12 @@ namespace PCoreAdapters.Gameplay
             _physics = GetComponent<Rigidbody2D>();
             _defaultData =
                 Resources.Load<BaseBulletConfigHolder>("Data/Combat/DefaultBulletConfig")
-                    .Config; 
+                    .Config;
+            IsReset = new ReactiveProperty<bool>();
             
             Reset.Subscribe(_ => OnReset())
+                .AddTo(_disposables);
+            Reset.Subscribe(_ => IsReset.Value = true)
                 .AddTo(_disposables);
         }
 
@@ -42,6 +45,7 @@ namespace PCoreAdapters.Gameplay
         }
 
         public ReactiveCommand<MonoBullet> Reset { get; private set; }
+        public ReactiveProperty<bool> IsReset { get; private set; }
         public void Move(Vector2 direction) => _bullet.Move(direction);
 
         public BaseBulletData Data
@@ -51,8 +55,10 @@ namespace PCoreAdapters.Gameplay
         }
         public ReactiveProperty<bool> IsLaunched => _bullet.IsLaunched;
         public ReactiveProperty<Vector2> LaunchedDirection => _bullet.LaunchedDirection;
-        public void Launch(Vector2 launchOrigin, Vector2 direction) 
+        public void Launch(Vector2 launchOrigin, Vector2 direction)
         {
+            IsReset.Value = false;
+            
             _bullet.Launch(launchOrigin, direction);
             var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle - 90);

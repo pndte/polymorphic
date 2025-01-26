@@ -25,15 +25,19 @@ namespace PCoreAdapters.Gameplay
 
         private void FixedUpdate()
         {
-            _rootNode.Evaluate();
+            // _rootNode.Evaluate();
         }
+        
+        public IShipMorph Morph => _shipMorph;
+        public bool IsSeparating { get; set; }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             var bullet = other.GetComponent<MonoBullet>();
             _shipMorph.ApplyDamage(bullet.Data.Damage.Value);
             
-            bullet.Reset.Execute(bullet);
+            if (!bullet.IsReset.Value)
+               bullet.Reset.Execute(bullet);
         }
     }
 }

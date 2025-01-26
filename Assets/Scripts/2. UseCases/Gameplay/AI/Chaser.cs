@@ -26,7 +26,7 @@ namespace PUseCases.Gameplay.AI
             Vector2 toTarget = _target.position - _origin.position;
             float distance = toTarget.magnitude;
 
-            if (distance > 35f)
+            if (distance > 70f)
             {
                 return NodeState.Failure;
             }
@@ -84,13 +84,13 @@ namespace PUseCases.Gameplay.AI
             if (nearbyEnemies > 0 && (separationForce.magnitude > 0.1f * _chaserConfig.SeparationRadius || _isSeparating))
             {
                 _isSeparating = true;
-                // separationForce /= nearbyEnemies;
+                separationForce /= nearbyEnemies;
                 separationForce = separationForce.normalized * _chaserConfig.SeparationStrength;
 
                 var maxMagnitude = direction.magnitude;
-                direction += separationForce * 0.2f;
+                direction += separationForce * 0.3f;
 
-                direction = Vector2.ClampMagnitude(direction, maxMagnitude);
+                // direction = Vector2.ClampMagnitude(direction, maxMagnitude);
             }
             else
             {
