@@ -35,7 +35,7 @@ namespace PCoreAdapters.Gameplay
 
         private void FixedUpdate()
         {
-            // _rootNode.Evaluate();
+            _rootNode.Evaluate();
         }
         
         public IShipMorph Morph => _shipMorph;

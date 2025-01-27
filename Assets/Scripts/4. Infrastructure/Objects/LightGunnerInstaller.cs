@@ -21,6 +21,7 @@ namespace PInfrastructure.Objects
         [SerializeField] private MachineGunBulletProvider _bulletProvider;
         [SerializeField] private BaseWeaponConfigHolder _enemyWeaponConfig;
         [SerializeField] private BaseBulletConfigHolder _bulletConfigHolder;
+        [SerializeField] private ShooterConfig _shooterConfig;
 
         public override void InstallBindings()
         {
@@ -40,11 +41,10 @@ namespace PInfrastructure.Objects
             var shipMorph = Container.Resolve<IShipMorph>();
 
             return new RootNode(
-                new Selector(new List<INode>()
+                new Sequence(new List<INode>
                 {
-                    new Chaser(shipMorph, new ChaserConfig(_movementConfig.Config, 15, 2), transform,
-                        Container.Resolve<TempPlayer>().transform),
-                    new Idler(shipMorph, transform)
+                    new WithinReachCondition(transform, Container.Resolve<TempPlayer>().transform, _shooterConfig),
+                    new Shooter()
                 }));
         }
 

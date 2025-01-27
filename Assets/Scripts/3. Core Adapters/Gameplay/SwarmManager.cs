@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using PUseCases.Meta.Data;
 using R3;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ namespace PCoreAdapters.Gameplay
     public class ChaserComputeController : MonoBehaviour
     {
         public ComputeShader ChaserCompute;
-        public ChaserComputeConfig Config;
+        public ChaserConfig Config;
         public Transform Target;
 
         private List<TempEnemy> _npcs;
@@ -123,7 +124,7 @@ namespace PCoreAdapters.Gameplay
 
             ChaserCompute.SetFloat("separationRadius", Config.SeparationRadius);
             ChaserCompute.SetFloat("separationStrength", Config.SeparationStrength);
-            ChaserCompute.SetFloat("baseSpeed", Config.BaseSpeed);
+            ChaserCompute.SetFloat("baseSpeed", Config.MovementConfig.Speed);
             ChaserCompute.SetFloat("minArriveDistance", Config.MinArriveDistance);
             ChaserCompute.SetFloat("arriveRange", Config.ArriveRange);
             ChaserCompute.SetFloat("maxChaseDistance", Config.MaxChaseDistance);
